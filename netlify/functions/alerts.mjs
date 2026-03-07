@@ -2,44 +2,86 @@ export const config = {
   path: "/api/alerts",
 };
 
-const HEADERS = {
-  Referer: "https://www.oref.org.il/",
-  "X-Requested-With": "XMLHttpRequest",
-  "Accept-Language": "he",
+const BROWSER_HEADERS = {
   "User-Agent":
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
   Accept: "application/json, text/plain, */*",
 };
 
+const CORS_HEADERS = {
+  "Content-Type": "application/json",
+  "Access-Control-Allow-Origin": "*",
+};
+
+// Normalize alerts from different API formats into { city, category }
+function normalizeAlerts(data) {
+  if (!Array.isArray(data)) return [];
+
+  return data.flatMap((item) => {
+    // Format A — Tzeva Adom: { cities: [...], threat: 0 }
+    if (Array.isArray(item.cities)) {
+      return item.cities.map((city) => ({
+        city,
+        isMissile: item.threat === 0 || item.threat === "0",
+      }));
+    }
+
+    // Format B — Oref official: { data: "city", category: 1 }
+    return [
+      {
+        city: item.data || item.title || "Unknown",
+        isMissile:
+          item.category === 1 ||
+          item.category === "1" ||
+          item.cat === 1 ||
+          item.cat === "1",
+      },
+    ];
+  });
+}
+
+async function tryFetch(url, headers = {}) {
+  const res = await fetch(url, { headers });
+  if (!res.ok) return null;
+  const raw = await res.text();
+  try {
+    return JSON.parse(raw);
+  } catch {
+    return null;
+  }
+}
+
 async function fetchAlerts(fromDate, toDate) {
-  // Try multiple known Pikud HaOref endpoints
-  const urls = [
-    `https://www.oref.org.il/Shared/Ajax/GetAlarmsHistory.aspx?lang=he&fromDate=${fromDate}&toDate=${toDate}&mode=0`,
-    `https://www.oref.org.il/warningMessages/alert/History/AlertsHistory.json?lang=he&fromDate=${fromDate}&toDate=${toDate}`,
+  const sources = [
+    // 1. Tzeva Adom community API
+    `https://api.tzevaadom.co.il/notifications`,
+    // 2. Official Oref via AllOrigins proxy
+    `https://api.allorigins.win/raw?url=${encodeURIComponent(
+      `https://www.oref.org.il/Shared/Ajax/GetAlarmsHistory.aspx?lang=he&fromDate=${fromDate}&toDate=${toDate}&mode=0`
+    )}`,
+    // 3. Official Oref via corsproxy
+    `https://corsproxy.io/?${encodeURIComponent(
+      `https://www.oref.org.il/Shared/Ajax/GetAlarmsHistory.aspx?lang=he&fromDate=${fromDate}&toDate=${toDate}&mode=0`
+    )}`,
   ];
 
-  for (const url of urls) {
-    try {
-      const res = await fetch(url, { headers: HEADERS });
-      if (!res.ok) continue;
+  const errors = [];
 
-      const raw = await res.text();
-      const data = JSON.parse(raw);
-      if (Array.isArray(data)) return data;
-    } catch {
-      continue;
+  for (const url of sources) {
+    try {
+      const data = await tryFetch(url, BROWSER_HEADERS);
+      if (data && Array.isArray(data) && data.length > 0) {
+        return { data, source: url.split("/")[2] };
+      }
+    } catch (err) {
+      errors.push({ url: url.split("/")[2], error: err.message });
     }
   }
 
-  return null;
+  return { data: null, errors };
 }
 
 export default async (req) => {
-  const corsHeaders = {
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Origin": "*",
-  };
-
   try {
     const now = new Date();
     const weekAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
@@ -47,33 +89,26 @@ export default async (req) => {
     const fmt = (d) =>
       `${String(d.getDate()).padStart(2, "0")}.${String(d.getMonth() + 1).padStart(2, "0")}.${d.getFullYear()}`;
 
-    const alerts = await fetchAlerts(fmt(weekAgo), fmt(now));
+    const result = await fetchAlerts(fmt(weekAgo), fmt(now));
 
-    if (alerts === null) {
+    if (!result.data) {
       return new Response(
         JSON.stringify({
-          error:
-            "Pikud HaOref API is blocking requests from this server. " +
-            "The API restricts access to Israeli IPs only.",
+          error: "All alert data sources are unavailable.",
+          details: result.errors || [],
         }),
-        { status: 502, headers: corsHeaders }
+        { status: 502, headers: CORS_HEADERS }
       );
     }
 
-    // category 1 = rocket / missile alerts
-    const missileAlerts = alerts.filter(
-      (a) =>
-        a.category === 1 ||
-        a.category === "1" ||
-        a.cat === 1 ||
-        a.cat === "1"
-    );
+    // Normalize from whichever source responded
+    const allAlerts = normalizeAlerts(result.data);
+    const missileAlerts = allAlerts.filter((a) => a.isMissile);
 
-    // Count per city
+    // Filter to last 7 days (in case the API returns more)
     const counts = {};
     for (const alert of missileAlerts) {
-      const city = alert.data || alert.title || "Unknown";
-      counts[city] = (counts[city] || 0) + 1;
+      counts[alert.city] = (counts[alert.city] || 0) + 1;
     }
 
     const sorted = Object.entries(counts)
@@ -93,10 +128,11 @@ export default async (req) => {
         fromDate: fmt(weekAgo),
         toDate: fmt(now),
         updatedAt: now.toISOString(),
+        source: result.source,
       }),
       {
         headers: {
-          ...corsHeaders,
+          ...CORS_HEADERS,
           "Cache-Control": "public, max-age=30",
         },
       }
@@ -104,7 +140,7 @@ export default async (req) => {
   } catch (err) {
     return new Response(
       JSON.stringify({ error: err.message }),
-      { status: 500, headers: corsHeaders }
+      { status: 500, headers: CORS_HEADERS }
     );
   }
 };
