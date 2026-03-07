@@ -15,21 +15,46 @@ export default async (req) => {
         Referer: "https://www.oref.org.il/",
         "X-Requested-With": "XMLHttpRequest",
         "Accept-Language": "he",
+        "User-Agent":
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        Accept: "application/json, text/plain, */*",
       },
     });
 
     if (!res.ok) {
-      return new Response(JSON.stringify({ error: `Upstream ${res.status}` }), {
-        status: 502,
-        headers: { "Content-Type": "application/json" },
-      });
+      const body = await res.text();
+      return new Response(
+        JSON.stringify({ error: `Upstream ${res.status}`, detail: body.slice(0, 200) }),
+        {
+          status: 502,
+          headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" },
+        }
+      );
     }
 
-    const alerts = await res.json();
+    const raw = await res.text();
+    let alerts;
+    try {
+      alerts = JSON.parse(raw);
+    } catch {
+      return new Response(
+        JSON.stringify({ error: "Invalid JSON from upstream", detail: raw.slice(0, 200) }),
+        {
+          status: 502,
+          headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" },
+        }
+      );
+    }
 
     // category 1 = rocket / missile alerts
     const missileAlerts = Array.isArray(alerts)
-      ? alerts.filter((a) => a.category === 1 || a.cat === "1")
+      ? alerts.filter(
+          (a) =>
+            a.category === 1 ||
+            a.category === "1" ||
+            a.cat === 1 ||
+            a.cat === "1"
+        )
       : [];
 
     // Count per city
@@ -61,13 +86,14 @@ export default async (req) => {
         headers: {
           "Content-Type": "application/json",
           "Cache-Control": "public, max-age=30",
+          "Access-Control-Allow-Origin": "*",
         },
       }
     );
   } catch (err) {
-    return new Response(JSON.stringify({ error: err.message }), {
+    return new Response(JSON.stringify({ error: err.message, stack: err.stack }), {
       status: 500,
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" },
     });
   }
 };
