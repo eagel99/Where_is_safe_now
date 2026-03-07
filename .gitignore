@@ -1,0 +1,9 @@
+# Visual Studio
+.vs/
+*.slnx
+*.sln
+
+# Local Netlify folder
+.netlify/
+node_modules/
+.env

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>דשבורד התרעות – פיקוד העורף</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --surface: #1e293b;
+            --border: #334155;
+            --text: #f1f5f9;
+            --muted: #94a3b8;
+            --red: #ef4444;
+            --red-dim: #7f1d1d;
+            --green: #22c55e;
+            --green-dim: #14532d;
+            --accent: #3b82f6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem 1rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+            header h1 {
+                font-size: 1.75rem;
+                margin-bottom: 0.25rem;
+            }
+
+            header p {
+                color: var(--muted);
+                font-size: 0.875rem;
+            }
+
+        .stats-bar {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .stat-chip {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 0.75rem;
+            padding: 0.75rem 1.5rem;
+            text-align: center;
+        }
+
+            .stat-chip .value {
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: var(--accent);
+            }
+
+            .stat-chip .label {
+                font-size: 0.75rem;
+                color: var(--muted);
+                margin-top: 0.125rem;
+            }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            width: 100%;
+            max-width: 860px;
+        }
+
+        @media (max-width: 640px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+            .card::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                height: 3px;
+            }
+
+            .card.danger::before {
+                background: var(--red);
+            }
+
+            .card.safe::before {
+                background: var(--green);
+            }
+
+            .card h2 {
+                font-size: 1rem;
+                margin-bottom: 1rem;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+            }
+
+            .card.danger h2 {
+                color: var(--red);
+            }
+
+            .card.safe h2 {
+                color: var(--green);
+            }
+
+        .city-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-bottom: 0.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+            .city-row .bar {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                opacity: 0.12;
+                border-radius: 0.5rem;
+                transition: width 0.6s ease;
+            }
+
+        .card.danger .city-row .bar {
+            background: var(--red);
+        }
+
+        .card.safe .city-row .bar {
+            background: var(--green);
+        }
+
+        .city-row .rank {
+            width: 1.75rem;
+            height: 1.75rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .card.danger .city-row .rank {
+            background: var(--red-dim);
+            color: var(--red);
+        }
+
+        .card.safe .city-row .rank {
+            background: var(--green-dim);
+            color: var(--green);
+        }
+
+        .city-row .name {
+            flex: 1;
+            margin: 0 0.75rem;
+            font-weight: 500;
+            z-index: 1;
+        }
+
+        .city-row .count {
+            font-weight: 700;
+            font-size: 1.125rem;
+            z-index: 1;
+        }
+
+        .card.danger .city-row .count {
+            color: var(--red);
+        }
+
+        .card.safe .city-row .count {
+            color: var(--green);
+        }
+
+        footer {
+            margin-top: 2rem;
+            color: var(--muted);
+            font-size: 0.75rem;
+            text-align: center;
+        }
+
+        .live-dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: var(--green);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+            margin-left: 0.5rem;
+            vertical-align: middle;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.3;
+            }
+        }
+
+        .spinner {
+            border: 3px solid var(--border);
+            border-top-color: var(--accent);
+            border-radius: 50%;
+            width: 2rem;
+            height: 2rem;
+            animation: spin 0.8s linear infinite;
+            margin: 2rem auto;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .error-msg {
+            background: var(--red-dim);
+            color: var(--red);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            max-width: 860px;
+            width: 100%;
+        }
+
+        .empty-state {
+            color: var(--muted);
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🚀 מדשבורד התרעות – פיקוד העורף</h1>
+        <p>
+            נתוני 7 ימים אחרונים &middot; מתעדכן כל דקה
+            <span class="live-dot"></span>
+        </p>
+    </header>
+
+    <div class="stats-bar" id="statsBar"></div>
+
+    <div id="root">
+        <div class="spinner"></div>
+    </div>
+
+    <footer id="footer"></footer>
+
+    <script>const API = "/api/alerts";
+      const INTERVAL = 60_000; // 1 minute
+
+      async function fetchData() {
+        const res = await fetch(API);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json();
+      }
+
+      function buildCityRows(items, maxCount) {
+        if (!items.length) {
+          return `<div class="empty-state">אין נתונים לתקופה זו</div>`;
+        }
+        return items
+          .map(
+            (item, i) => `
+          <div class="city-row">
+            <div class="bar" style="width:${Math.max((item.count / maxCount) * 100, 8)}%"></div>
+            <span class="rank">${i + 1}</span>
+            <span class="name">${item.city}</span>
+            <span class="count">${item.count.toLocaleString()}</span>
+          </div>`
+          )
+          .join("");
+      }
+
+      function render(data) {
+        const maxAll = data.most.length ? data.most[0].count : 1;
+
+        document.getElementById("statsBar").innerHTML = `
+          <div class="stat-chip">
+            <div class="value">${data.totalAlerts.toLocaleString()}</div>
+            <div class="label">סה״כ התרעות</div>
+          </div>
+          <div class="stat-chip">
+            <div class="value">${data.totalCities.toLocaleString()}</div>
+            <div class="label">ערים שהותרעו</div>
+          </div>
+          <div class="stat-chip">
+            <div class="value">${data.fromDate} – ${data.toDate}</div>
+            <div class="label">טווח תאריכים</div>
+          </div>`;
+
+        document.getElementById("root").innerHTML = `
+          <div class="grid">
+            <div class="card danger">
+              <h2>🔴 הכי הרבה התרעות</h2>
+              ${buildCityRows(data.most, maxAll)}
+            </div>
+            <div class="card safe">
+              <h2>🟢 הכי מעט התרעות</h2>
+              ${buildCityRows(data.least, maxAll)}
+            </div>
+          </div>`;
+
+        const time = new Date(data.updatedAt).toLocaleTimeString("he-IL");
+        document.getElementById("footer").textContent =
+          `עדכון אחרון: ${time} · מקור: פיקוד העורף`;
+      }
+
+      function renderError(err) {
+        document.getElementById("root").innerHTML = `
+          <div class="error-msg">⚠️ שגיאה בטעינת הנתונים: ${err.message}</div>`;
+      }
+
+      async function tick() {
+        try {
+          const data = await fetchData();
+          if (data.error) throw new Error(data.error);
+          render(data);
+        } catch (err) {
+          renderError(err);
+        }
+      }
+
+      // Initial load + recurring refresh
+      tick();
+      setInterval(tick, INTERVAL);</script>
+</body>
+</html>
