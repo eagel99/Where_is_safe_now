@@ -1,4 +1,45 @@
+export const config = {
+  path: "/api/alerts",
+};
+
+const HEADERS = {
+  Referer: "https://www.oref.org.il/",
+  "X-Requested-With": "XMLHttpRequest",
+  "Accept-Language": "he",
+  "User-Agent":
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+  Accept: "application/json, text/plain, */*",
+};
+
+async function fetchAlerts(fromDate, toDate) {
+  // Try multiple known Pikud HaOref endpoints
+  const urls = [
+    `https://www.oref.org.il/Shared/Ajax/GetAlarmsHistory.aspx?lang=he&fromDate=${fromDate}&toDate=${toDate}&mode=0`,
+    `https://www.oref.org.il/warningMessages/alert/History/AlertsHistory.json?lang=he&fromDate=${fromDate}&toDate=${toDate}`,
+  ];
+
+  for (const url of urls) {
+    try {
+      const res = await fetch(url, { headers: HEADERS });
+      if (!res.ok) continue;
+
+      const raw = await res.text();
+      const data = JSON.parse(raw);
+      if (Array.isArray(data)) return data;
+    } catch {
+      continue;
+    }
+  }
+
+  return null;
+}
+
 export default async (req) => {
+  const corsHeaders = {
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+  };
+
   try {
     const now = new Date();
     const weekAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
@@ -6,56 +47,27 @@ export default async (req) => {
     const fmt = (d) =>
       `${String(d.getDate()).padStart(2, "0")}.${String(d.getMonth() + 1).padStart(2, "0")}.${d.getFullYear()}`;
 
-    const url =
-      `https://www.oref.org.il/warningMessages/alert/History/AlertsHistory.json` +
-      `?lang=he&fromDate=${fmt(weekAgo)}&toDate=${fmt(now)}`;
+    const alerts = await fetchAlerts(fmt(weekAgo), fmt(now));
 
-    const res = await fetch(url, {
-      headers: {
-        Referer: "https://www.oref.org.il/",
-        "X-Requested-With": "XMLHttpRequest",
-        "Accept-Language": "he",
-        "User-Agent":
-          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-        Accept: "application/json, text/plain, */*",
-      },
-    });
-
-    if (!res.ok) {
-      const body = await res.text();
+    if (alerts === null) {
       return new Response(
-        JSON.stringify({ error: `Upstream ${res.status}`, detail: body.slice(0, 200) }),
-        {
-          status: 502,
-          headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" },
-        }
-      );
-    }
-
-    const raw = await res.text();
-    let alerts;
-    try {
-      alerts = JSON.parse(raw);
-    } catch {
-      return new Response(
-        JSON.stringify({ error: "Invalid JSON from upstream", detail: raw.slice(0, 200) }),
-        {
-          status: 502,
-          headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" },
-        }
+        JSON.stringify({
+          error:
+            "Pikud HaOref API is blocking requests from this server. " +
+            "The API restricts access to Israeli IPs only.",
+        }),
+        { status: 502, headers: corsHeaders }
       );
     }
 
     // category 1 = rocket / missile alerts
-    const missileAlerts = Array.isArray(alerts)
-      ? alerts.filter(
-          (a) =>
-            a.category === 1 ||
-            a.category === "1" ||
-            a.cat === 1 ||
-            a.cat === "1"
-        )
-      : [];
+    const missileAlerts = alerts.filter(
+      (a) =>
+        a.category === 1 ||
+        a.category === "1" ||
+        a.cat === 1 ||
+        a.cat === "1"
+    );
 
     // Count per city
     const counts = {};
@@ -84,20 +96,15 @@ export default async (req) => {
       }),
       {
         headers: {
-          "Content-Type": "application/json",
+          ...corsHeaders,
           "Cache-Control": "public, max-age=30",
-          "Access-Control-Allow-Origin": "*",
         },
       }
     );
   } catch (err) {
-    return new Response(JSON.stringify({ error: err.message, stack: err.stack }), {
-      status: 500,
-      headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" },
-    });
+    return new Response(
+      JSON.stringify({ error: err.message }),
+      { status: 500, headers: corsHeaders }
+    );
   }
-};
-
-export const config = {
-  path: "/api/alerts",
 };
