@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "description": "Missile siren dashboard – Pikud HaOref",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs"
+  },
   "engines": {
     "node": ">=18.0.0"
   }
