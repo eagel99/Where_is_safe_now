@@ -2,7 +2,8 @@ export const config = {
   path: "/api/alerts",
 };
 
-const API_BASE = "https://alerts-history.oref.org.il/Shared/Ajax/GetAlarmsHistory.aspx";
+const API_BASE =
+  "https://alerts-history.oref.org.il/Shared/Ajax/GetAlarmsHistory.aspx";
 
 const BROWSER_HEADERS = {
   Referer: "https://alerts-history.oref.org.il/12481-he/Pakar.aspx",
@@ -15,6 +16,10 @@ const BROWSER_HEADERS = {
 };
 
 const CATEGORY_MISSILES = 1;
+const HEBREW_LETTERS = "אבגדהוזחטיכלמנסעפצקרשת".split("");
+const DIRECTIONS = new Set(["צפון", "דרום", "מזרח", "מערב"]);
+const BATCH_SIZE = 10;
+const BATCH_DELAY_MS = 150;
 
 const CORS_HEADERS = {
   "Content-Type": "application/json",
@@ -22,55 +27,123 @@ const CORS_HEADERS = {
 };
 
 function fmt(d) {
-  return `${String(d.getDate()).padStart(2, "0")}.${String(d.getMonth() + 1).padStart(2, "0")}.${d.getFullYear()}`;
+  return `${String(d.getDate()).padStart(2, "0")}.${String(
+    d.getMonth() + 1
+  ).padStart(2, "0")}.${d.getFullYear()}`;
 }
 
-export default async (req) => {
+function safeParseJSON(raw) {
+  const trimmed = raw.trim();
+  if (!trimmed) return [];
+  return JSON.parse(trimmed);
+}
+
+function getBaseCity(name) {
+  if (!name || !name.includes(" - ")) return name || "Unknown";
+  const idx = name.indexOf(" - ");
+  const left = name.substring(0, idx).trim();
+  const right = name.substring(idx + 3).trim();
+
+  if (DIRECTIONS.has(right)) return left;
+  if (left.startsWith("אזור התעשיה") || left.startsWith("אזור תעשיה"))
+    return right;
+  return left;
+}
+
+function delay(ms) {
+  return new Promise((r) => setTimeout(r, ms));
+}
+
+async function apiFetch(params) {
+  const url = `${API_BASE}?${params}`;
+  try {
+    const res = await fetch(url, { headers: BROWSER_HEADERS });
+    if (!res.ok) return [];
+    return safeParseJSON(await res.text());
+  } catch {
+    return [];
+  }
+}
+
+async function discoverCities() {
+  const citySet = new Set();
+  for (let i = 0; i < HEBREW_LETTERS.length; i += BATCH_SIZE) {
+    const batch = HEBREW_LETTERS.slice(i, i + BATCH_SIZE);
+    const results = await Promise.all(
+      batch.map((l) =>
+        apiFetch(`lang=he&mode=1&city_0=${encodeURIComponent(l)}`)
+      )
+    );
+    for (const alerts of results)
+      for (const a of alerts) if (a.data) citySet.add(a.data);
+    if (i + BATCH_SIZE < HEBREW_LETTERS.length) await delay(BATCH_DELAY_MS);
+  }
+  return [...citySet].sort();
+}
+
+export default async () => {
   try {
     const now = new Date();
     const weekAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
     const fromDate = fmt(weekAgo);
     const toDate = fmt(now);
+    const cutoff = weekAgo.getTime();
 
-    const url = `${API_BASE}?lang=he&fromDate=${fromDate}&toDate=${toDate}&mode=0`;
-    const res = await fetch(url, { headers: BROWSER_HEADERS });
+    // Phase 1 – discover every area name the API knows
+    const cities = await discoverCities();
 
-    if (!res.ok) {
-      return new Response(
-        JSON.stringify({ error: `API returned ${res.status}` }),
-        { status: 502, headers: CORS_HEADERS }
+    // Phase 2 – query each area individually
+    const allAlerts = [];
+    for (let i = 0; i < cities.length; i += BATCH_SIZE) {
+      const batch = cities.slice(i, i + BATCH_SIZE);
+      const results = await Promise.all(
+        batch.map((city) =>
+          apiFetch(
+            `lang=he&mode=1&fromDate=${fromDate}&toDate=${toDate}&city_0=${encodeURIComponent(city)}`
+          )
+        )
       );
+      for (const alerts of results) allAlerts.push(...alerts);
+      if (i + BATCH_SIZE < cities.length) await delay(BATCH_DELAY_MS);
     }
 
-    const raw = await res.text();
-    const trimmed = raw.trim();
-    const alerts = trimmed ? JSON.parse(trimmed) : [];
+    // Deduplicate by rid
+    const seen = new Set();
+    const unique = allAlerts.filter((a) => {
+      if (seen.has(a.rid)) return false;
+      seen.add(a.rid);
+      return true;
+    });
 
-    if (!Array.isArray(alerts)) {
-      return new Response(
-        JSON.stringify({ error: "Unexpected response format" }),
-        { status: 502, headers: CORS_HEADERS }
-      );
-    }
+    // Filter: missiles only + within last 7 days
+    const missileAlerts = unique.filter((a) => {
+      const t = new Date(a.alertDate).getTime();
+      return a.category === CATEGORY_MISSILES && t >= cutoff;
+    });
 
-    const cutoff = weekAgo.toISOString();
-    const missileAlerts = alerts.filter(
-      (a) => a.category === CATEGORY_MISSILES && a.alertDate >= cutoff
-    );
-
-    const counts = {};
+    // Count per sub-region
+    const subCounts = {};
     for (const alert of missileAlerts) {
       const city = alert.data || "Unknown";
-      counts[city] = (counts[city] || 0) + 1;
+      subCounts[city] = (subCounts[city] || 0) + 1;
     }
 
-    const sorted = Object.entries(counts)
+    // Merge sub-regions → base city, keep the MAX count
+    const baseCityCounts = {};
+    for (const [subRegion, count] of Object.entries(subCounts)) {
+      const base = getBaseCity(subRegion);
+      baseCityCounts[base] = Math.max(baseCityCounts[base] || 0, count);
+    }
+
+    const sorted = Object.entries(baseCityCounts)
       .map(([city, count]) => ({ city, count }))
       .sort((a, b) => b.count - a.count);
 
     const most = sorted.slice(0, 3);
     const least =
-      sorted.length > 3 ? sorted.slice(-3).reverse() : sorted.slice().reverse();
+      sorted.length > 3
+        ? sorted.slice(-3).reverse()
+        : sorted.slice().reverse();
 
     return new Response(
       JSON.stringify({
@@ -83,13 +156,16 @@ export default async (req) => {
         updatedAt: now.toISOString(),
       }),
       {
-        headers: { ...CORS_HEADERS, "Cache-Control": "public, max-age=30" },
+        headers: {
+          ...CORS_HEADERS,
+          "Cache-Control": "public, max-age=300",
+        },
       }
     );
   } catch (err) {
-    return new Response(
-      JSON.stringify({ error: err.message }),
-      { status: 500, headers: CORS_HEADERS }
-    );
+    return new Response(JSON.stringify({ error: err.message }), {
+      status: 500,
+      headers: CORS_HEADERS,
+    });
   }
 };

@@ -50,6 +50,35 @@
                 font-size: 0.875rem;
             }
 
+        .progress-container {
+            width: 100%;
+            max-width: 860px;
+            margin-bottom: 1.5rem;
+            display: none;
+        }
+
+        .progress-bar {
+            height: 6px;
+            background: var(--border);
+            border-radius: 3px;
+            overflow: hidden;
+            margin-bottom: 0.5rem;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--accent);
+            border-radius: 3px;
+            transition: width 0.3s ease;
+            width: 0%;
+        }
+
+        .progress-text {
+            color: var(--muted);
+            font-size: 0.75rem;
+            text-align: center;
+        }
+
         .stats-bar {
             display: flex;
             gap: 1.5rem;
@@ -277,6 +306,13 @@
         </p>
     </header>
 
+    <div class="progress-container" id="progress">
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="progress-text" id="progressText">מתחיל סריקה...</div>
+    </div>
+
     <div class="stats-bar" id="statsBar"></div>
 
     <div id="root">
@@ -285,14 +321,10 @@
 
     <footer id="footer"></footer>
 
-    <script>const API = "/api/alerts";
-      const INTERVAL = 60_000; // 1 minute
-
-      async function fetchData() {
-        const res = await fetch(API);
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        return res.json();
-      }
+    <script>
+      const STREAM_API = "/api/alerts/stream";
+      const API = "/api/alerts";
+      const INTERVAL = 60_000;
 
       function buildCityRows(items, maxCount) {
         if (!items.length) {
@@ -317,7 +349,7 @@
         document.getElementById("statsBar").innerHTML = `
           <div class="stat-chip">
             <div class="value">${data.totalAlerts.toLocaleString()}</div>
-            <div class="label">סה״כ התרעות</div>
+            <div class="label">סה״כ התרעות טילים</div>
           </div>
           <div class="stat-chip">
             <div class="value">${data.totalCities.toLocaleString()}</div>
@@ -345,23 +377,64 @@
           `עדכון אחרון: ${time} · מקור: פיקוד העורף`;
       }
 
-      function renderError(err) {
+      function renderError(msg) {
         document.getElementById("root").innerHTML = `
-          <div class="error-msg">⚠️ שגיאה בטעינת הנתונים: ${err.message}</div>`;
+          <div class="error-msg">⚠️ שגיאה בטעינת הנתונים: ${msg}</div>`;
       }
 
-      async function tick() {
+      // ── SSE streaming on initial load ─────────────────────────────────
+      function connectStream() {
+        const progressEl = document.getElementById("progress");
+        const fillEl = document.getElementById("progressFill");
+        const textEl = document.getElementById("progressText");
+
+        progressEl.style.display = "block";
+
+        const es = new EventSource(STREAM_API);
+        let completed = false;
+
+        es.addEventListener("progress", (e) => {
+          const d = JSON.parse(e.data);
+          const pct = Math.round((d.done / d.total) * 100);
+          fillEl.style.width = `${pct}%`;
+          textEl.textContent = `בודק: ${d.city}  (${d.done}/${d.total})`;
+        });
+
+        es.addEventListener("update", (e) => {
+          render(JSON.parse(e.data));
+        });
+
+        es.addEventListener("done", (e) => {
+          completed = true;
+          render(JSON.parse(e.data));
+          progressEl.style.display = "none";
+          es.close();
+          // Switch to polling the cached endpoint
+          setInterval(pollCached, INTERVAL);
+        });
+
+        es.onerror = () => {
+          if (!completed) {
+            progressEl.style.display = "none";
+            renderError("החיבור לשרת נותק");
+          }
+          es.close();
+        };
+      }
+
+      async function pollCached() {
         try {
-          const data = await fetchData();
+          const res = await fetch(API);
+          if (!res.ok) throw new Error(`HTTP ${res.status}`);
+          const data = await res.json();
           if (data.error) throw new Error(data.error);
           render(data);
         } catch (err) {
-          renderError(err);
+          renderError(err.message);
         }
       }
 
-      // Initial load + recurring refresh
-      tick();
-      setInterval(tick, INTERVAL);</script>
+      connectStream();
+    </script>
 </body>
 </html>
