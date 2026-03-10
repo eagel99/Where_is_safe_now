@@ -127,6 +127,7 @@ function computeRankings(subCounts, fromDate, toDate, updatedAt) {
   return {
     most,
     least,
+    allCities: sorted,
     totalAlerts,
     totalCities: sorted.length,
     fromDate,

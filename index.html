@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚨</text></svg>">
     <title>דשבורד התרעות – פיקוד העורף</title>
     <style>
         :root {
@@ -16,6 +17,7 @@
             --green: #22c55e;
             --green-dim: #14532d;
             --accent: #3b82f6;
+            --accent-dim: #1e3a5f;
         }
 
         * {
@@ -52,7 +54,7 @@
 
         .progress-container {
             width: 100%;
-            max-width: 860px;
+            max-width: 1100px;
             margin-bottom: 1.5rem;
             display: none;
         }
@@ -109,13 +111,14 @@
 
         .grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
             gap: 1.5rem;
             width: 100%;
-            max-width: 860px;
+            max-width: 1100px;
+            align-items: start;
         }
 
-        @media (max-width: 640px) {
+        @media (max-width: 900px) {
             .grid {
                 grid-template-columns: 1fr;
             }
@@ -147,6 +150,14 @@
                 background: var(--green);
             }
 
+            .card.your-city {
+                border-color: rgba(255, 255, 255, 0.25);
+            }
+
+            .card.your-city::before {
+                background: var(--accent);
+            }
+
             .card h2 {
                 font-size: 1rem;
                 margin-bottom: 1rem;
@@ -161,6 +172,10 @@
 
             .card.safe h2 {
                 color: var(--green);
+            }
+
+            .card.your-city h2 {
+                color: var(--accent);
             }
 
         .city-row {
@@ -235,6 +250,41 @@
             color: var(--green);
         }
 
+        .city-select {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            background: var(--bg);
+            color: var(--text);
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            font-family: inherit;
+            cursor: pointer;
+            direction: rtl;
+        }
+
+            .city-select:focus {
+                outline: none;
+                border-color: var(--accent);
+            }
+
+        .city-result {
+            text-align: center;
+            padding: 1.5rem 0 0.5rem;
+        }
+
+            .city-result .count-display {
+                font-size: 2.5rem;
+                font-weight: 700;
+                color: var(--accent);
+            }
+
+            .city-result .count-label {
+                color: var(--muted);
+                font-size: 0.875rem;
+                margin-top: 0.25rem;
+            }
+
         footer {
             margin-top: 2rem;
             color: var(--muted);
@@ -285,7 +335,7 @@
             padding: 1rem;
             border-radius: 0.5rem;
             text-align: center;
-            max-width: 860px;
+            max-width: 1100px;
             width: 100%;
         }
 
@@ -299,9 +349,9 @@
 </head>
 <body>
     <header>
-        <h1>🚀 דשבורד התרעות – פיקוד העורף</h1>
+        <h1><span style="display:inline-block;transform:scaleX(-1)">🚀</span> דשבורד התרעות – פיקוד העורף 🚨</h1>
         <p>
-            נתוני 7 ימים אחרונים &middot; מתעדכן כל דקה
+            נתוני 7 ימים אחרונים &middot; מתעדכן כל 10 דקות
             <span class="live-dot"></span>
         </p>
     </header>
@@ -326,6 +376,9 @@
       const API = "/api/alerts";
       const INTERVAL = 60_000;
 
+      let currentData = null;
+      let selectedCity = "";
+
       function buildCityRows(items, maxCount) {
         if (!items.length) {
           return `<div class="empty-state">אין נתונים לתקופה זו</div>`;
@@ -343,8 +396,36 @@
           .join("");
       }
 
+      function buildCityOptions(allCities) {
+        if (!allCities || !allCities.length) return "";
+        return allCities
+          .slice()
+          .sort((a, b) => a.city.localeCompare(b.city, "he"))
+          .map(
+            (c) =>
+              `<option value="${c.city}"${c.city === selectedCity ? " selected" : ""}>${c.city}</option>`
+          )
+          .join("");
+      }
+
+      function buildCityResult() {
+        if (!selectedCity || !currentData || !currentData.allCities) {
+          return `<div class="empty-state">בחר עיר מהרשימה</div>`;
+        }
+        const found = currentData.allCities.find((c) => c.city === selectedCity);
+        const count = found ? found.count : 0;
+        return `
+          <div class="count-display">${count.toLocaleString()}</div>
+          <div class="count-label">התרעות טילים ב${selectedCity}</div>`;
+      }
+
       function render(data) {
+        currentData = data;
         const maxAll = data.most.length ? data.most[0].count : 1;
+        const avgAlerts =
+          data.totalCities > 0
+            ? Math.ceil(data.totalAlerts / data.totalCities)
+            : 0;
 
         document.getElementById("statsBar").innerHTML = `
           <div class="stat-chip">
@@ -354,6 +435,10 @@
           <div class="stat-chip">
             <div class="value">${data.totalCities.toLocaleString()}</div>
             <div class="label">ערים שהותרעו</div>
+          </div>
+          <div class="stat-chip">
+            <div class="value">${avgAlerts.toLocaleString()}</div>
+            <div class="label">ממוצע הזעקות</div>
           </div>
           <div class="stat-chip">
             <div class="value">${data.fromDate} – ${data.toDate}</div>
@@ -366,6 +451,16 @@
               <h2>🔴 הכי הרבה התרעות</h2>
               ${buildCityRows(data.most, maxAll)}
             </div>
+            <div class="card your-city">
+              <h2>🏙️ בעיר שלך</h2>
+              <select class="city-select" id="citySelect">
+                <option value="">בחר עיר...</option>
+                ${buildCityOptions(data.allCities)}
+              </select>
+              <div class="city-result" id="cityResult">
+                ${buildCityResult()}
+              </div>
+            </div>
             <div class="card safe">
               <h2>🟢 הכי מעט התרעות</h2>
               ${buildCityRows(data.least, maxAll)}
@@ -376,6 +471,15 @@
         document.getElementById("footer").textContent =
           `עדכון אחרון: ${time} · מקור: פיקוד העורף`;
       }
+
+      // Event delegation – survives innerHTML replacements
+      document.getElementById("root").addEventListener("change", (e) => {
+        if (e.target.id === "citySelect") {
+          selectedCity = e.target.value;
+          const resultEl = document.getElementById("cityResult");
+          if (resultEl) resultEl.innerHTML = buildCityResult();
+        }
+      });
 
       function renderError(msg) {
         document.getElementById("root").innerHTML = `
