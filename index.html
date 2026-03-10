@@ -379,6 +379,15 @@
       let currentData = null;
       let selectedCity = "";
 
+      function escapeHTML(str) {
+        return String(str)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#39;");
+      }
+
       function buildCityRows(items, maxCount) {
         if (!items.length) {
           return `<div class="empty-state">אין נתונים לתקופה זו</div>`;
@@ -389,7 +398,7 @@
           <div class="city-row">
             <div class="bar" style="width:${Math.max((item.count / maxCount) * 100, 8)}%"></div>
             <span class="rank">${i + 1}</span>
-            <span class="name">${item.city}</span>
+            <span class="name">${escapeHTML(item.city)}</span>
             <span class="count">${item.count.toLocaleString()}</span>
           </div>`
           )
@@ -403,7 +412,7 @@
           .sort((a, b) => a.city.localeCompare(b.city, "he"))
           .map(
             (c) =>
-              `<option value="${c.city}"${c.city === selectedCity ? " selected" : ""}>${c.city}</option>`
+              `<option value="${escapeHTML(c.city)}"${c.city === selectedCity ? " selected" : ""}>${escapeHTML(c.city)}</option>`
           )
           .join("");
       }
@@ -416,7 +425,7 @@
         const count = found ? found.count : 0;
         return `
           <div class="count-display">${count.toLocaleString()}</div>
-          <div class="count-label">התרעות טילים ב${selectedCity}</div>`;
+          <div class="count-label">התרעות טילים ב${escapeHTML(selectedCity)}</div>`;
       }
 
       function render(data) {
@@ -441,7 +450,7 @@
             <div class="label">ממוצע הזעקות</div>
           </div>
           <div class="stat-chip">
-            <div class="value">${data.fromDate} – ${data.toDate}</div>
+            <div class="value">${escapeHTML(data.fromDate)} – ${escapeHTML(data.toDate)}</div>
             <div class="label">טווח תאריכים</div>
           </div>`;
 
@@ -483,7 +492,7 @@
 
       function renderError(msg) {
         document.getElementById("root").innerHTML = `
-          <div class="error-msg">⚠️ שגיאה בטעינת הנתונים: ${msg}</div>`;
+          <div class="error-msg">⚠️ שגיאה בטעינת הנתונים: ${escapeHTML(msg)}</div>`;
       }
 
       // ── SSE streaming on initial load ─────────────────────────────────
