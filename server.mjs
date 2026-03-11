@@ -198,9 +198,19 @@ async function runQuery() {
   alertsCacheTime = Date.now();
 
   broadcast("done", result);
+
+  const citiesWithAlerts = new Set(
+    Object.keys(subCounts).map(getBaseCity)
+  );
+  const citiesWithoutAlerts = cities.filter((c) => !citiesWithAlerts.has(c));
   console.log(
     `   ✅ Done! ${result.totalAlerts} missiles across ${result.totalCities} cities`
   );
+  if (citiesWithoutAlerts.length > 0) {
+    console.log(
+      `   ℹ️ Cities with 0 missile alerts (${citiesWithoutAlerts.length}): ${citiesWithoutAlerts.join(", ")}`
+    );
+  }
 
   return result;
 }
