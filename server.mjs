@@ -22,6 +22,20 @@ const BROWSER_HEADERS = {
 const CATEGORY_MISSILES = 1;
 const SUB_REGIONS = ["צפון", "דרום", "מזרח", "מערב"];
 const DIRECTIONS = new Set(SUB_REGIONS);
+const CUSTOM_SUB_REGIONS = {
+  "אשדוד": [
+    "א,ב,ד,ה",
+    "איזור תעשייה צפוני",
+    "ג,ו,ז",
+    "ח,ט,י,יג,יד,טז",
+    "יא,יב,טו,יז,מרינה,סיטי",
+  ],
+  "צפת": [
+    "נוף כנרת",
+    "עיר",
+    "עכברה",
+  ],
+};
 const REQUEST_DELAY_MS = 300;
 const ALERTS_CACHE_TTL = 5 * 60 * 1000;
 
@@ -105,6 +119,9 @@ async function loadCities() {
 }
 
 function getCityVariants(city) {
+  if (CUSTOM_SUB_REGIONS[city]) {
+    return [city, ...CUSTOM_SUB_REGIONS[city].map((sub) => `${city} - ${sub}`)];
+  }
   return [city, ...SUB_REGIONS.map((dir) => `${city} - ${dir}`)];
 }
 
