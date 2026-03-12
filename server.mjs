@@ -20,7 +20,7 @@ const BROWSER_HEADERS = {
 };
 
 const CATEGORY_MISSILES = 1;
-const CATEGORY_UAV = 6;
+const CATEGORY_UAV = 2;
 const ALERT_CATEGORIES = new Set([CATEGORY_MISSILES, CATEGORY_UAV]);
 
 const SUB_REGIONS = ["צפון", "דרום", "מזרח", "מערב"];
@@ -231,8 +231,12 @@ async function runQuery() {
 
     if (alerts.length > 0) {
       const relevant = alerts.filter((a) => ALERT_CATEGORIES.has(a.category));
+      const catCounts = {};
+      for (const a of alerts) {
+        catCounts[a.category] = (catCounts[a.category] || 0) + 1;
+      }
       console.log(
-        `   ✓ ${variant}  → ${alerts.length} total, ${relevant.length} missiles/UAVs`
+        `   ✓ ${variant}  → ${alerts.length} total, ${relevant.length} missiles/UAVs | categories: ${JSON.stringify(catCounts)}`
       );
     }
 
