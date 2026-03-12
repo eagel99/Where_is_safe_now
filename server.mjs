@@ -20,6 +20,9 @@ const BROWSER_HEADERS = {
 };
 
 const CATEGORY_MISSILES = 1;
+const CATEGORY_UAV = 6;
+const ALERT_CATEGORIES = new Set([CATEGORY_MISSILES, CATEGORY_UAV]);
+
 const SUB_REGIONS = ["צפון", "דרום", "מזרח", "מערב"];
 const DIRECTIONS = new Set(SUB_REGIONS);
 const CUSTOM_SUB_REGIONS = {
@@ -34,6 +37,35 @@ const CUSTOM_SUB_REGIONS = {
     "נוף כנרת",
     "עיר",
     "עכברה",
+  ],
+  "תל אביב": [
+    "דרום העיר ויפו",
+    "מזרח",
+    "מרכז העיר",
+    "עבר הירקון",
+  ],
+  "הרצליה": [
+    "מרכז וגליל ים",
+  ],
+  "חדרה": [
+    "נווה חיים",
+  ],
+  "חיפה": [
+    "בת גלים ק.אליעזר",
+    "כרמל, הדר ועיר תחתית",
+    "מערב",
+    "מפרץ",
+    "נווה שאנן ורמות כרמל",
+    "קריית חיים ושמואל",
+  ],
+  "ירושלים": [
+    "אזור תעשייה עטרות",
+    "דרום",
+    "כפר עקב",
+    "מזרח",
+    "מערב",
+    "מרכז",
+    "צפון",
   ],
 };
 const REQUEST_DELAY_MS = 300;
@@ -86,7 +118,7 @@ function getBaseCity(name) {
   const right = name.substring(idx + 3).trim();
 
   if (DIRECTIONS.has(right)) return left;
-  if (left.startsWith("אזור התעשיה") || left.startsWith("אזור תעשיה"))
+  if (left.startsWith("אזור התעשיה") || left.startsWith("אזור תעשייה"))
     return right;
   return left;
 }
@@ -118,9 +150,16 @@ async function loadCities() {
     .filter(Boolean);
 }
 
+const CUSTOM_ONLY = new Set(["אשדוד", "צפת", "תל אביב", "חיפה", "ירושלים"]);
+
 function getCityVariants(city) {
-  if (CUSTOM_SUB_REGIONS[city]) {
-    return [city, ...CUSTOM_SUB_REGIONS[city].map((sub) => `${city} - ${sub}`)];
+  const extras = CUSTOM_SUB_REGIONS[city];
+  if (extras) {
+    const variants = [city, ...extras.map((sub) => `${city} - ${sub}`)];
+    if (!CUSTOM_ONLY.has(city)) {
+      variants.push(...SUB_REGIONS.map((dir) => `${city} - ${dir}`));
+    }
+    return variants;
   }
   return [city, ...SUB_REGIONS.map((dir) => `${city} - ${dir}`)];
 }
@@ -177,23 +216,23 @@ async function runQuery() {
       `lang=he&mode=2&fromDate=${fromDate}&toDate=${toDate}&city_0=${encodeURIComponent(variant)}`
     );
 
-    let hasNewMissiles = false;
+    let hasNewAlerts = false;
     for (const a of alerts) {
       if (!seen.has(a.rid)) {
         seen.add(a.rid);
         const t = new Date(a.alertDate).getTime();
-        if (a.category === CATEGORY_MISSILES && t >= cutoff) {
+        if (ALERT_CATEGORIES.has(a.category) && t >= cutoff) {
           const city = normalizeCity(a.data);
           subCounts[city] = (subCounts[city] || 0) + 1;
-          hasNewMissiles = true;
+          hasNewAlerts = true;
         }
       }
     }
 
     if (alerts.length > 0) {
-      const missiles = alerts.filter((a) => a.category === CATEGORY_MISSILES);
+      const relevant = alerts.filter((a) => ALERT_CATEGORIES.has(a.category));
       console.log(
-        `   ✓ ${variant}  → ${alerts.length} total, ${missiles.length} missiles`
+        `   ✓ ${variant}  → ${alerts.length} total, ${relevant.length} missiles/UAVs`
       );
     }
 
@@ -203,7 +242,7 @@ async function runQuery() {
       city: variant,
     });
 
-    if (hasNewMissiles) {
+    if (hasNewAlerts) {
       broadcast("update", computeRankings(subCounts, fromDate, toDate, updatedAt));
     }
 
@@ -221,7 +260,7 @@ async function runQuery() {
   );
   const citiesWithoutAlerts = cities.filter((c) => !citiesWithAlerts.has(c));
   console.log(
-    `   ✅ Done! ${result.totalAlerts} missiles across ${result.totalCities} cities`
+    `   ✅ Done! ${result.totalAlerts} alerts (missiles + UAVs) across ${result.totalCities} cities`
   );
   if (citiesWithoutAlerts.length > 0) {
     console.log(
