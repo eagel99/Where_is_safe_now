@@ -69,7 +69,7 @@ const CUSTOM_SUB_REGIONS = {
   ],
 };
 const REQUEST_DELAY_MS = 300;
-const ALERTS_CACHE_TTL = 5 * 60 * 1000;
+const ALERTS_CACHE_TTL = 2 * 60 * 1000;
 
 let alertsCache = null;
 let alertsCacheTime = 0;
