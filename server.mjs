@@ -73,7 +73,7 @@ const ALERTS_CACHE_TTL = 2 * 60 * 1000;
 
 // ── Zone pruning ────────────────────────────────────────────────────────
 const ZONE_INACTIVE_TTL = 3 * 24 * 60 * 60 * 1000;   // 3 days
-const FULL_SCAN_INTERVAL = 24 * 60 * 60 * 1000;       // 24 hours
+const FULL_SCAN_INTERVAL = 4 * 24 * 60 * 60 * 1000;   // 4 days
 
 const zoneActivity = new Map();  // variant → last alert timestamp
 let hasCompletedFullScan = false;
