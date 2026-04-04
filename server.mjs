@@ -69,6 +69,7 @@ const CUSTOM_SUB_REGIONS = {
   ],
 };
 const REQUEST_DELAY_MS = 300;
+const BATCH_SIZE = 10;
 const ALERTS_CACHE_TTL = 2 * 60 * 1000;
 
 // ── Zone pruning ────────────────────────────────────────────────────────
@@ -212,7 +213,7 @@ async function runQuery() {
 
   const allVariants = cities.flatMap(getCityVariants);
 
-  // Zone pruning: full scan on first run or every 24h, otherwise skip inactive zones
+  // Zone pruning: full scan on first run or every 4 days, otherwise skip inactive zones
   const nowMs = Date.now();
   const needsFullScan =
     !hasCompletedFullScan || nowMs - lastFullScanTime > FULL_SCAN_INTERVAL;
@@ -234,55 +235,75 @@ async function runQuery() {
       (needsFullScan
         ? " (full scan)"
         : ` (optimized, ${skipped} inactive zones pruned)`) +
-      ` (${fromDate} → ${toDate})`
+      ` in batches of ${BATCH_SIZE} (${fromDate} → ${toDate})`
   );
 
-  for (let i = 0; i < queryVariants.length; i++) {
-    const variant = queryVariants[i];
-    const alerts = await apiFetch(
-      `lang=he&mode=2&fromDate=${fromDate}&toDate=${toDate}&city_0=${encodeURIComponent(variant)}`
+  let done = 0;
+  let batchHasNewAlerts = false;
+
+  for (let b = 0; b < queryVariants.length; b += BATCH_SIZE) {
+    const batch = queryVariants.slice(b, b + BATCH_SIZE);
+
+    // Fetch all variants in this batch concurrently
+    const results = await Promise.all(
+      batch.map(async (variant) => {
+        const alerts = await apiFetch(
+          `lang=he&mode=2&fromDate=${fromDate}&toDate=${toDate}&city_0=${encodeURIComponent(variant)}`
+        );
+        return { variant, alerts };
+      })
     );
 
-    let hasNewAlerts = false;
-    for (const a of alerts) {
-      if (!seen.has(a.rid)) {
-        seen.add(a.rid);
-        const t = new Date(a.alertDate).getTime();
-        if (ALERT_CATEGORIES.has(a.category) && t >= cutoff) {
-          const city = normalizeCity(a.data);
-          subCounts[city] = (subCounts[city] || 0) + 1;
-          hasNewAlerts = true;
+    // Process results sequentially (shared seen/subCounts state)
+    for (const { variant, alerts } of results) {
+      let hasNewAlerts = false;
+      for (const a of alerts) {
+        if (!seen.has(a.rid)) {
+          seen.add(a.rid);
+          const t = new Date(a.alertDate).getTime();
+          if (ALERT_CATEGORIES.has(a.category) && t >= cutoff) {
+            const city = normalizeCity(a.data);
+            subCounts[city] = (subCounts[city] || 0) + 1;
+            hasNewAlerts = true;
+          }
         }
       }
-    }
 
-    // Track zone activity — mark active if API returned any relevant alerts
-    if (alerts.some((a) => ALERT_CATEGORIES.has(a.category))) {
-      zoneActivity.set(variant, Date.now());
-    }
-
-    if (alerts.length > 0) {
-      const relevant = alerts.filter((a) => ALERT_CATEGORIES.has(a.category));
-      const catCounts = {};
-      for (const a of alerts) {
-        catCounts[a.category] = (catCounts[a.category] || 0) + 1;
+      // Track zone activity — mark active if API returned any relevant alerts
+      if (alerts.some((a) => ALERT_CATEGORIES.has(a.category))) {
+        zoneActivity.set(variant, Date.now());
       }
-      console.log(
-        `   ✓ ${variant}  → ${alerts.length} total, ${relevant.length} missiles/UAVs | categories: ${JSON.stringify(catCounts)}`
-      );
+
+      if (alerts.length > 0) {
+        const relevant = alerts.filter((a) => ALERT_CATEGORIES.has(a.category));
+        const catCounts = {};
+        for (const a of alerts) {
+          catCounts[a.category] = (catCounts[a.category] || 0) + 1;
+        }
+        console.log(
+          `   ✓ ${variant}  → ${alerts.length} total, ${relevant.length} missiles/UAVs | categories: ${JSON.stringify(catCounts)}`
+        );
+      }
+
+      if (hasNewAlerts) batchHasNewAlerts = true;
+      done++;
     }
 
     broadcast("progress", {
-      done: i + 1,
+      done,
       total: queryVariants.length,
-      city: variant,
+      city: batch[batch.length - 1],
     });
 
-    if (hasNewAlerts) {
+    if (batchHasNewAlerts) {
       broadcast("update", computeRankings(subCounts, fromDate, toDate, updatedAt));
+      batchHasNewAlerts = false;
     }
 
-    await delay(REQUEST_DELAY_MS);
+    // Delay between batches, not between individual requests
+    if (b + BATCH_SIZE < queryVariants.length) {
+      await delay(REQUEST_DELAY_MS);
+    }
   }
 
   if (needsFullScan) {
