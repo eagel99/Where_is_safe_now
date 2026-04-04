@@ -71,6 +71,14 @@ const CUSTOM_SUB_REGIONS = {
 const REQUEST_DELAY_MS = 300;
 const ALERTS_CACHE_TTL = 2 * 60 * 1000;
 
+// ── Zone pruning ────────────────────────────────────────────────────────
+const ZONE_INACTIVE_TTL = 3 * 24 * 60 * 60 * 1000;   // 3 days
+const FULL_SCAN_INTERVAL = 24 * 60 * 60 * 1000;       // 24 hours
+
+const zoneActivity = new Map();  // variant → last alert timestamp
+let hasCompletedFullScan = false;
+let lastFullScanTime = 0;
+
 let alertsCache = null;
 let alertsCacheTime = 0;
 
@@ -203,15 +211,34 @@ async function runQuery() {
   const updatedAt = now.toISOString();
 
   const allVariants = cities.flatMap(getCityVariants);
+
+  // Zone pruning: full scan on first run or every 24h, otherwise skip inactive zones
+  const nowMs = Date.now();
+  const needsFullScan =
+    !hasCompletedFullScan || nowMs - lastFullScanTime > FULL_SCAN_INTERVAL;
+
+  const queryVariants = needsFullScan
+    ? allVariants
+    : allVariants.filter((v) => {
+        if (!v.includes(" - ")) return true; // always query base cities
+        const lastActive = zoneActivity.get(v);
+        return lastActive !== undefined && nowMs - lastActive < ZONE_INACTIVE_TTL;
+      });
+
   const seen = new Set();
   const subCounts = {};
+  const skipped = allVariants.length - queryVariants.length;
 
   console.log(
-    `🚀 Fetching: ${cities.length} cities × 5 = ${allVariants.length} queries (${fromDate} → ${toDate})`
+    `🚀 Fetching: ${queryVariants.length}/${allVariants.length} variants` +
+      (needsFullScan
+        ? " (full scan)"
+        : ` (optimized, ${skipped} inactive zones pruned)`) +
+      ` (${fromDate} → ${toDate})`
   );
 
-  for (let i = 0; i < allVariants.length; i++) {
-    const variant = allVariants[i];
+  for (let i = 0; i < queryVariants.length; i++) {
+    const variant = queryVariants[i];
     const alerts = await apiFetch(
       `lang=he&mode=2&fromDate=${fromDate}&toDate=${toDate}&city_0=${encodeURIComponent(variant)}`
     );
@@ -229,6 +256,11 @@ async function runQuery() {
       }
     }
 
+    // Track zone activity — mark active if API returned any relevant alerts
+    if (alerts.some((a) => ALERT_CATEGORIES.has(a.category))) {
+      zoneActivity.set(variant, Date.now());
+    }
+
     if (alerts.length > 0) {
       const relevant = alerts.filter((a) => ALERT_CATEGORIES.has(a.category));
       const catCounts = {};
@@ -242,7 +274,7 @@ async function runQuery() {
 
     broadcast("progress", {
       done: i + 1,
-      total: allVariants.length,
+      total: queryVariants.length,
       city: variant,
     });
 
@@ -251,6 +283,11 @@ async function runQuery() {
     }
 
     await delay(REQUEST_DELAY_MS);
+  }
+
+  if (needsFullScan) {
+    hasCompletedFullScan = true;
+    lastFullScanTime = Date.now();
   }
 
   const result = computeRankings(subCounts, fromDate, toDate, updatedAt);
@@ -263,12 +300,19 @@ async function runQuery() {
     Object.keys(subCounts).map(getBaseCity)
   );
   const citiesWithoutAlerts = cities.filter((c) => !citiesWithAlerts.has(c));
+  const activeZones = [...zoneActivity.values()].filter(
+    (t) => Date.now() - t < ZONE_INACTIVE_TTL
+  ).length;
+
   console.log(
     `   ✅ Done! ${result.totalAlerts} alerts (missiles + UAVs) across ${result.totalCities} cities`
   );
+  console.log(
+    `   📊 Zones: ${activeZones} active / ${zoneActivity.size} tracked (inactive pruned after 3 days)`
+  );
   if (citiesWithoutAlerts.length > 0) {
     console.log(
-      `   ℹ️ Cities with 0 missile alerts (${citiesWithoutAlerts.length}): ${citiesWithoutAlerts.join(", ")}`
+      `   ℹ️ Cities with 0 alerts (${citiesWithoutAlerts.length}): ${citiesWithoutAlerts.join(", ")}`
     );
   }
 
@@ -286,6 +330,18 @@ async function fetchAlerts() {
     return await queryPromise;
   } finally {
     queryPromise = null;
+  }
+}
+
+// ── Auto-refresh loop ───────────────────────────────────────────────────
+async function autoRefreshLoop() {
+  while (true) {
+    try {
+      await fetchAlerts();
+    } catch (e) {
+      console.error("❌ Auto-refresh failed:", e.message);
+    }
+    await delay(ALERTS_CACHE_TTL);
   }
 }
 
@@ -321,7 +377,7 @@ const server = createServer(async (req, res) => {
     addListener(listener);
     req.on("close", () => removeListener(listener));
 
-    // Start query if not already running
+    // Subscribe to already-running query (started by autoRefreshLoop)
     if (!queryPromise) {
       queryPromise = runQuery();
       queryPromise.finally(() => {
@@ -357,4 +413,5 @@ const server = createServer(async (req, res) => {
 
 server.listen(PORT, () => {
   console.log(`\n  🚀 Dashboard: http://localhost:${PORT}\n`);
+  autoRefreshLoop(); // Start fetching immediately, no client needed
 });
