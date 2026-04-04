@@ -368,6 +368,12 @@ async function autoRefreshLoop() {
 
 // ── HTTP Server ─────────────────────────────────────────────────────────
 const server = createServer(async (req, res) => {
+  const ip =
+    req.headers["x-forwarded-for"]?.split(",")[0].trim() ||
+    req.socket.remoteAddress;
+  const time = new Date().toLocaleTimeString("he-IL");
+  console.log(`🔗 [${time}] ${req.method} ${req.url} ← ${ip}`);
+
   // SSE streaming endpoint
   if (req.url === "/api/alerts/stream") {
     res.writeHead(200, {
