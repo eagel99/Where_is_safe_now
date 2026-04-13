@@ -7,3 +7,6 @@
 .netlify/
 node_modules/
 .env
+
+# Large binary artifacts
+*.tar

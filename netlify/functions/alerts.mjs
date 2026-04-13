@@ -21,9 +21,14 @@ const DIRECTIONS = new Set(["צפון", "דרום", "מזרח", "מערב"]);
 const BATCH_SIZE = 10;
 const BATCH_DELAY_MS = 150;
 
+// Restrict CORS to same-origin; override via ALLOWED_ORIGIN env var if needed
+const ALLOWED_ORIGIN = process.env.ALLOWED_ORIGIN || "";
 const CORS_HEADERS = {
   "Content-Type": "application/json",
-  "Access-Control-Allow-Origin": "*",
+  ...(ALLOWED_ORIGIN
+    ? { "Access-Control-Allow-Origin": ALLOWED_ORIGIN }
+    : {}),
+  "X-Content-Type-Options": "nosniff",
 };
 
 function fmt(d) {
@@ -35,7 +40,16 @@ function fmt(d) {
 function safeParseJSON(raw) {
   const trimmed = raw.trim();
   if (!trimmed) return [];
-  return JSON.parse(trimmed);
+  const parsed = JSON.parse(trimmed);
+  if (!Array.isArray(parsed)) return [];
+  // Filter out prototype pollution attempts
+  return parsed.filter(
+    (item) =>
+      item != null &&
+      typeof item === "object" &&
+      !("__proto__" in item) &&
+      !("constructor" in item && typeof item.constructor === "object")
+  );
 }
 
 function getBaseCity(name) {

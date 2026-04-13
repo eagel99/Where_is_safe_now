@@ -4,7 +4,44 @@ import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
+
+const ALLOWED_ORIGIN = process.env.ALLOWED_ORIGIN || "";
+
+// ── Security headers ────────────────────────────────────────────────────
+const SECURITY_HEADERS = {
+  "X-Content-Type-Options": "nosniff",
+  "X-Frame-Options": "DENY",
+  "Referrer-Policy": "strict-origin-when-cross-origin",
+  "Content-Security-Policy":
+    "default-src 'self'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'self' data:;",
+  "Permissions-Policy": "camera=(), microphone=(), geolocation=()",
+  ...(ALLOWED_ORIGIN ? { "Access-Control-Allow-Origin": ALLOWED_ORIGIN } : {}),
+};
+
+// ── Rate limiting ───────────────────────────────────────────────────────
+const RATE_LIMIT_WINDOW_MS = 60_000; // 1 minute
+const RATE_LIMIT_MAX = 60;           // max requests per window per IP
+const rateLimitMap = new Map();      // ip → { count, resetTime }
+
+function isRateLimited(ip) {
+  const now = Date.now();
+  let entry = rateLimitMap.get(ip);
+  if (!entry || now > entry.resetTime) {
+    entry = { count: 0, resetTime: now + RATE_LIMIT_WINDOW_MS };
+    rateLimitMap.set(ip, entry);
+  }
+  entry.count++;
+  return entry.count > RATE_LIMIT_MAX;
+}
+
+// Periodically clean expired rate-limit entries to prevent memory leak
+setInterval(() => {
+  const now = Date.now();
+  for (const [ip, entry] of rateLimitMap) {
+    if (now > entry.resetTime) rateLimitMap.delete(ip);
+  }
+}, RATE_LIMIT_WINDOW_MS);
 
 const API_BASE =
   "https://alerts-history.oref.org.il/Shared/Ajax/GetAlarmsHistory.aspx";
@@ -84,6 +121,7 @@ let alertsCache = null;
 let alertsCacheTime = 0;
 
 // ── SSE streaming infrastructure ────────────────────────────────────────
+const MAX_SSE_LISTENERS = 100;
 let queryPromise = null;
 let streamListeners = [];
 
@@ -109,7 +147,16 @@ function fmt(d) {
 function safeParseJSON(raw) {
   const trimmed = raw.trim();
   if (!trimmed) return [];
-  return JSON.parse(trimmed);
+  const parsed = JSON.parse(trimmed);
+  if (!Array.isArray(parsed)) return [];
+  // Filter out prototype pollution attempts
+  return parsed.filter(
+    (item) =>
+      item != null &&
+      typeof item === "object" &&
+      !("__proto__" in item) &&
+      !("constructor" in item && typeof item.constructor === "object")
+  );
 }
 
 function normalizeCity(name) {
@@ -221,10 +268,10 @@ async function runQuery() {
   const queryVariants = needsFullScan
     ? allVariants
     : allVariants.filter((v) => {
-        if (!v.includes(" - ")) return true; // always query base cities
-        const lastActive = zoneActivity.get(v);
-        return lastActive !== undefined && nowMs - lastActive < ZONE_INACTIVE_TTL;
-      });
+      if (!v.includes(" - ")) return true; // always query base cities
+      const lastActive = zoneActivity.get(v);
+      return lastActive !== undefined && nowMs - lastActive < ZONE_INACTIVE_TTL;
+    });
 
   const seen = new Set();
   const subCounts = {};
@@ -232,10 +279,10 @@ async function runQuery() {
 
   console.log(
     `🚀 Fetching: ${queryVariants.length}/${allVariants.length} variants` +
-      (needsFullScan
-        ? " (full scan)"
-        : ` (optimized, ${skipped} inactive zones pruned)`) +
-      ` in batches of ${BATCH_SIZE} (${fromDate} → ${toDate})`
+    (needsFullScan
+      ? " (full scan)"
+      : ` (optimized, ${skipped} inactive zones pruned)`) +
+    ` in batches of ${BATCH_SIZE} (${fromDate} → ${toDate})`
   );
 
   let done = 0;
@@ -374,9 +421,24 @@ const server = createServer(async (req, res) => {
   const time = new Date().toLocaleTimeString("he-IL");
   console.log(`🔗 [${time}] ${req.method} ${req.url} ← ${ip}`);
 
+  // Rate limiting
+  if (isRateLimited(ip)) {
+    res.writeHead(429, { ...SECURITY_HEADERS, "Content-Type": "text/plain" });
+    res.end("Too many requests");
+    return;
+  }
+
   // SSE streaming endpoint
   if (req.url === "/api/alerts/stream") {
+    // Cap SSE connections to prevent memory exhaustion
+    if (streamListeners.length >= MAX_SSE_LISTENERS) {
+      res.writeHead(503, { ...SECURITY_HEADERS, "Content-Type": "text/plain" });
+      res.end("Too many connections");
+      return;
+    }
+
     res.writeHead(200, {
+      ...SECURITY_HEADERS,
       "Content-Type": "text/event-stream",
       "Cache-Control": "no-cache",
       Connection: "keep-alive",
@@ -418,27 +480,66 @@ const server = createServer(async (req, res) => {
   if (req.url === "/api/alerts") {
     try {
       const data = await fetchAlerts();
-      res.writeHead(200, { "Content-Type": "application/json" });
+      res.writeHead(200, {
+        ...SECURITY_HEADERS,
+        "Content-Type": "application/json",
+      });
       res.end(JSON.stringify(data));
     } catch (err) {
-      console.error("❌", err.message);
-      res.writeHead(502, { "Content-Type": "application/json" });
-      res.end(JSON.stringify({ error: err.message }));
+      console.error("❌ /api/alerts error:", err);
+      res.writeHead(502, {
+        ...SECURITY_HEADERS,
+        "Content-Type": "application/json",
+      });
+      res.end(JSON.stringify({ error: "Failed to fetch alert data" }));
     }
     return;
   }
 
-  try {
-    const html = await readFile(resolve(__dirname, "index.html"), "utf-8");
-    res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
-    res.end(html);
-  } catch {
-    res.writeHead(404);
-    res.end("Not found");
+  // Serve index.html only for root and /index.html
+  if (req.url === "/" || req.url === "/index.html") {
+    try {
+      const html = await readFile(resolve(__dirname, "index.html"), "utf-8");
+      res.writeHead(200, {
+        ...SECURITY_HEADERS,
+        "Content-Type": "text/html; charset=utf-8",
+      });
+      res.end(html);
+    } catch {
+      res.writeHead(500, SECURITY_HEADERS);
+      res.end("Internal server error");
+    }
+    return;
   }
+
+  // All other routes → 404
+  res.writeHead(404, { ...SECURITY_HEADERS, "Content-Type": "text/plain" });
+  res.end("Not found");
 });
 
-server.listen(PORT, () => {
-  console.log(`\n  🚀 Dashboard: http://localhost:${PORT}\n`);
-  autoRefreshLoop(); // Start fetching immediately, no client needed
-});
+// ── Exports for testing ─────────────────────────────────────────────────
+export {
+  server,
+  SECURITY_HEADERS,
+  MAX_SSE_LISTENERS,
+  safeParseJSON,
+  isRateLimited,
+  RATE_LIMIT_MAX,
+  RATE_LIMIT_WINDOW_MS,
+  rateLimitMap,
+  streamListeners,
+  addListener,
+  removeListener,
+};
+
+// Start the server only when run directly (not imported for tests)
+const isDirectRun =
+  process.argv[1] &&
+  resolve(process.argv[1]) === resolve(fileURLToPath(import.meta.url));
+
+if (isDirectRun) {
+  server.listen(PORT, () => {
+    console.log(`\n  🚀 Dashboard: http://localhost:${PORT}\n`);
+    autoRefreshLoop(); // Start fetching immediately, no client needed
+  });
+}

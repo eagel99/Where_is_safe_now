@@ -9,14 +9,28 @@ jobs:
     permissions:
       contents: read
       packages: write
+      security-events: write
     steps:
       - uses: actions/checkout@v4
+
       - uses: docker/login-action@v3
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
+
       - uses: docker/build-push-action@v6
         with:
           push: true
-          tags: ghcr.io/eagel99/pikud-dashboard:latest
+          tags: |
+            ghcr.io/eagel99/pikud-dashboard:latest
+            ghcr.io/eagel99/pikud-dashboard:${{ github.sha }}
+
+      # Scan the built image for CVEs
+      - name: Run Trivy vulnerability scanner
+        uses: aquasecurity/trivy-action@0.28.0
+        with:
+          image-ref: ghcr.io/eagel99/pikud-dashboard:${{ github.sha }}
+          format: table
+          exit-code: 1
+          severity: CRITICAL,HIGH

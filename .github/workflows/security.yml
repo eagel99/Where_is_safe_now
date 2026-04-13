@@ -1,0 +1,24 @@
+name: Security Tests
+
+on:
+  push:
+    branches: ["*"]
+  pull_request:
+    branches: ["*"]
+
+jobs:
+  security-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Run security tests
+        run: node --test security.test.mjs
+
+      - name: Audit dependencies
+        run: npm audit --audit-level=high || true
