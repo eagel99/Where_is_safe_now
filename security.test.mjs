@@ -63,6 +63,18 @@ test("6. safeParseJSON rejects non-array payloads", () => {
   assert.deepStrictEqual(safeParseJSON(``), []);
 });
 
+test("Regression: safeParseJSON preserves normal API response objects", () => {
+  // Simulates a real Pikud HaOref API response
+  const apiResponse = JSON.stringify([
+    { rid: "123", data: "תל אביב", alertDate: "2026-04-10", category: 1 },
+    { rid: "456", data: "חיפה", alertDate: "2026-04-11", category: 2 },
+  ]);
+  const parsed = safeParseJSON(apiResponse);
+  assert.strictEqual(parsed.length, 2, "Normal objects must not be filtered out");
+  assert.strictEqual(parsed[0].rid, "123");
+  assert.strictEqual(parsed[1].data, "חיפה");
+});
+
 test("8. Rate limiter blocks excessive requests", () => {
   const ip = "test-rate-limit-ip";
   let blockCount = 0;

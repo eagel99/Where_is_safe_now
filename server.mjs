@@ -149,13 +149,13 @@ function safeParseJSON(raw) {
   if (!trimmed) return [];
   const parsed = JSON.parse(trimmed);
   if (!Array.isArray(parsed)) return [];
-  // Filter out prototype pollution attempts
+  // Filter out prototype pollution attempts (check OWN properties only)
   return parsed.filter(
     (item) =>
       item != null &&
       typeof item === "object" &&
-      !("__proto__" in item) &&
-      !("constructor" in item && typeof item.constructor === "object")
+      !Object.hasOwn(item, "__proto__") &&
+      !Object.hasOwn(item, "constructor")
   );
 }
 
