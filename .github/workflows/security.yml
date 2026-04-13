@@ -6,6 +6,9 @@ on:
   pull_request:
     branches: ["*"]
 
+permissions:
+  contents: read
+
 jobs:
   security-tests:
     runs-on: ubuntu-latest
