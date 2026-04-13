@@ -18,7 +18,7 @@ jobs:
           node-version: "22"
 
       - name: Run security tests
-        run: node --test security.test.mjs
+        run: node --test --test-force-exit security.test.mjs
 
       - name: Audit dependencies
         run: npm audit --audit-level=high || true
