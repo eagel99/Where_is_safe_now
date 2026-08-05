@@ -23,5 +23,7 @@ jobs:
       - name: Run security tests
         run: node --test --test-force-exit --experimental-test-isolation=none security.test.mjs
 
+      # Requires package-lock.json — without it npm exits ENOLOCK and audits nothing.
+      # No `|| true`: a high/critical advisory must fail the job, not go green.
       - name: Audit dependencies
-        run: npm audit --audit-level=high || true
+        run: npm audit --audit-level=high

@@ -4,6 +4,7 @@ import http from "node:http";
 import {
   server,
   safeParseJSON,
+  clientIp,
   isRateLimited,
   rateLimitMap,
   RATE_LIMIT_MAX,
@@ -88,6 +89,51 @@ test("8. Rate limiter blocks excessive requests", () => {
   }
 
   assert.strictEqual(blockCount, 5);
+});
+
+test("9. clientIp ignores X-Forwarded-For unless the proxy is trusted", () => {
+  const req = {
+    headers: { "x-forwarded-for": "1.2.3.4, 10.0.0.9" },
+    socket: { remoteAddress: "198.51.100.7" },
+  };
+
+  // Default deployment: header is attacker-controlled, use the socket address
+  assert.strictEqual(clientIp(req, false), "198.51.100.7");
+
+  // Behind our own reverse proxy: leftmost hop is the real client
+  assert.strictEqual(clientIp(req, true), "1.2.3.4");
+
+  // Trusted proxy but no/blank header → still fall back to the socket
+  const bare = { headers: {}, socket: { remoteAddress: "198.51.100.7" } };
+  assert.strictEqual(clientIp(bare, true), "198.51.100.7");
+  const blank = {
+    headers: { "x-forwarded-for": "  " },
+    socket: { remoteAddress: "198.51.100.7" },
+  };
+  assert.strictEqual(clientIp(blank, true), "198.51.100.7");
+});
+
+test("10. Rotating X-Forwarded-For cannot bypass the rate limit", async () => {
+  // Use 127.0.0.1 so every request shares one socket address (one map key)
+  const url = `http://127.0.0.1:${PORT}/`;
+  rateLimitMap.clear();
+
+  const statuses = [];
+  for (let i = 0; i < RATE_LIMIT_MAX + 5; i++) {
+    const res = await fetch(url, {
+      headers: { "X-Forwarded-For": `203.0.113.${i}` }, // unique spoof each time
+    });
+    statuses.push(res.status);
+    await res.text(); // drain the body so the connection is released
+  }
+
+  const blocked = statuses.filter((s) => s === 429).length;
+  assert.strictEqual(blocked, 5, `Expected 5 requests to be rate-limited, got ${blocked}`);
+  assert.strictEqual(
+    rateLimitMap.size,
+    1,
+    "Spoofed headers must not create extra rate-limit entries"
+  );
 });
 
 test("4. SSE connection limit is enforced", async () => {
