@@ -19,6 +19,21 @@ const SECURITY_HEADERS = {
   ...(ALLOWED_ORIGIN ? { "Access-Control-Allow-Origin": ALLOWED_ORIGIN } : {}),
 };
 
+// ── Client IP resolution ────────────────────────────────────────────────
+// X-Forwarded-For is set by the client unless a trusted reverse proxy rewrites
+// it, so honouring it unconditionally lets anyone rotate the header to bypass
+// the rate limit (and grow rateLimitMap without bound). Only read it when this
+// deployment actually sits behind a proxy we control: TRUST_PROXY=1.
+const TRUST_PROXY = process.env.TRUST_PROXY === "1";
+
+function clientIp(req, trustProxy = TRUST_PROXY) {
+  if (trustProxy) {
+    const xff = req.headers["x-forwarded-for"];
+    if (typeof xff === "string" && xff.trim()) return xff.split(",")[0].trim();
+  }
+  return req.socket.remoteAddress;
+}
+
 // ── Rate limiting ───────────────────────────────────────────────────────
 const RATE_LIMIT_WINDOW_MS = 60_000; // 1 minute
 const RATE_LIMIT_MAX = 60;           // max requests per window per IP
@@ -415,9 +430,7 @@ async function autoRefreshLoop() {
 
 // ── HTTP Server ─────────────────────────────────────────────────────────
 const server = createServer(async (req, res) => {
-  const ip =
-    req.headers["x-forwarded-for"]?.split(",")[0].trim() ||
-    req.socket.remoteAddress;
+  const ip = clientIp(req);
   const time = new Date().toLocaleTimeString("he-IL");
   console.log(`🔗 [${time}] ${req.method} ${req.url} ← ${ip}`);
 
@@ -523,6 +536,8 @@ export {
   SECURITY_HEADERS,
   MAX_SSE_LISTENERS,
   safeParseJSON,
+  clientIp,
+  TRUST_PROXY,
   isRateLimited,
   RATE_LIMIT_MAX,
   RATE_LIMIT_WINDOW_MS,
