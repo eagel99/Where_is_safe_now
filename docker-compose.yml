@@ -1,0 +1,21 @@
+services:
+  oref:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      DATA_DIR: /app/.data
+      TIMEZONE: Asia/Jerusalem
+      # Set to 1 only when a reverse proxy you control terminates connections
+      # in front of this service. See README.md.
+      TRUST_PROXY: "0"
+    volumes:
+      - oref-data:/app/.data
+      - ./config/actions.json:/app/config/actions.json:ro
+
+volumes:
+  oref-data:

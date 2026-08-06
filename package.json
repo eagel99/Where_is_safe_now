@@ -1,13 +1,28 @@
 {
   "name": "pikud-haoref-dashboard",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
-  "description": "Missile siren dashboard – Pikud HaOref",
+  "description": "Live Pikud HaOref alert aggregation (including early warning) with a 7-day city ranking dashboard",
   "type": "module",
-  "scripts": {
-    "start": "node server.mjs"
-  },
+  "license": "MIT",
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "check": "node scripts/check-syntax.js",
+    "test": "node --test --test-force-exit --experimental-test-isolation=none",
+    "verify": "npm run check && npm test"
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "leaflet": "^1.9.4",
+    "mqtt": "^5.10.4",
+    "pino": "^9.7.0",
+    "ws": "^8.18.3"
   }
 }
