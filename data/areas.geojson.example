@@ -1,0 +1,13 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "שם אזור מדויק של פיקוד העורף" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[34.7, 31.2], [34.8, 31.2], [34.8, 31.3], [34.7, 31.3], [34.7, 31.2]]]
+      }
+    }
+  ]
+}

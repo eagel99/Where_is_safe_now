@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101418">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>מרכז התרעות בזמן אמת</title>
+  <link rel="stylesheet" href="/vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">OREF COMMAND CENTER</p>
+      <h1>מרכז התרעות בזמן אמת</h1>
+      <p id="connectionText" class="muted">מתחבר למערכת...</p>
+    </div>
+    <div class="header-actions">
+      <a href="/" class="secondary-button">← דירוג 7 ימים</a>
+      <button id="soundButton" type="button" class="secondary-button" aria-pressed="false">הפעל צליל</button>
+      <span id="clock" class="clock"></span>
+    </div>
+  </header>
+
+  <main>
+    <section id="threatBanner" class="threat-banner clear" aria-live="assertive">
+      <div class="status-symbol" aria-hidden="true"></div>
+      <div class="banner-copy">
+        <span id="threatLabel" class="threat-label">אין איום פעיל</span>
+        <strong id="threatTitle">המערכת ממתינה להתראות</strong>
+        <span id="threatInstruction">יש לפעול תמיד לפי הנחיות פיקוד העורף הרשמיות.</span>
+      </div>
+      <div class="banner-count">
+        <span id="activeAreaCount">0</span>
+        <small>אזורים פעילים</small>
+      </div>
+    </section>
+
+    <section class="metrics" aria-label="מצב המערכת">
+      <article class="metric">
+        <span>מצב קליטה</span>
+        <strong id="healthMode">בודק</strong>
+        <small id="healthNote">טוען מקורות</small>
+      </article>
+      <article class="metric">
+        <span>מקורות זמינים</span>
+        <strong id="healthySources">0/0</strong>
+        <small>Push ומקורות רשמיים</small>
+      </article>
+      <article class="metric">
+        <span>אירועים שנקלטו</span>
+        <strong id="eventCount">0</strong>
+        <small>בזיכרון המקומי</small>
+      </article>
+      <article class="metric">
+        <span>פעולות אוטומטיות</span>
+        <strong id="actionMode">כבויות</strong>
+        <small id="actionCount">0 מסירות אחרונות</small>
+      </article>
+    </section>
+
+    <section class="dashboard-grid">
+      <article class="panel map-panel">
+        <div class="panel-heading">
+          <div>
+            <h2>מפת האיום</h2>
+            <p>נקודות מבוססות על מטא־דאטה של יישובים. ניתן להוסיף GeoJSON פרטי לפוליגונים.</p>
+          </div>
+          <button id="fitMapButton" type="button" class="secondary-button">מרכז מפה</button>
+        </div>
+        <div id="map" role="img" aria-label="מפה המציגה אזורים עם התרעות פעילות"></div>
+        <p id="mapFallback" class="empty-state hidden">אין קואורדינטות זמינות לאזורים הפעילים.</p>
+      </article>
+
+      <article class="panel current-panel">
+        <div class="panel-heading">
+          <div>
+            <h2>אזורים פעילים</h2>
+            <p>מצב מאוחד מכל המקורות, לפי האירוע הראשון שהגיע.</p>
+          </div>
+          <span id="stateUpdated" class="muted"></span>
+        </div>
+        <div id="activeAreas" class="area-list" aria-live="polite"></div>
+      </article>
+    </section>
+
+    <section class="dashboard-grid lower-grid">
+      <article class="panel timeline-panel">
+        <div class="panel-heading">
+          <div>
+            <h2>ציר זמן</h2>
+            <p>התראות, התרעות מקדימות והודעות סיום לאחר איחוד כפילויות.</p>
+          </div>
+          <select id="timelineFilter" aria-label="סינון ציר הזמן">
+            <option value="all">הכול</option>
+            <option value="alert">התראות</option>
+            <option value="pre_alert">מקדימות</option>
+            <option value="end">סיום</option>
+          </select>
+        </div>
+        <div id="timeline" class="timeline"></div>
+      </article>
+
+      <div class="side-stack">
+        <article class="panel">
+          <div class="panel-heading">
+            <div>
+              <h2>בריאות מקורות</h2>
+              <p>המערכת אינה מעכבת מקור מהיר בזמן המתנה לאימות.</p>
+            </div>
+          </div>
+          <div id="sources" class="source-list"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-heading">
+            <div>
+              <h2>פעולות ושירותים</h2>
+              <p>Webhook ו־MQTT עם הגנות מפני כפילויות ופעולות בלתי הפיכות.</p>
+            </div>
+          </div>
+          <div id="deliveries" class="delivery-list"></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    מערכת משלימה בלבד. האפליקציה הרשמית, הצופרים והנחיות פיקוד העורף הם מקורות הבטיחות המחייבים.
+  </footer>
+
+  <script src="/vendor/leaflet/leaflet.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

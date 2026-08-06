@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚨</text></svg>">
+    <link rel="stylesheet" href="/dashboard.css">
+    <title>דשבורד התרעות – פיקוד העורף</title>
+</head>
+<body>
+    <header>
+        <h1><span style="display:inline-block;transform:scaleX(-1)">🚀</span> דשבורד התרעות – פיקוד העורף 🚨</h1>
+        <p>
+            נתוני 7 ימים אחרונים &middot; מתעדכן כל 10 דקות
+            <span class="live-dot"></span>
+        </p>
+    </header>
+
+    <section class="live-banner clear" id="liveBanner" aria-live="assertive">
+        <div class="live-main">
+            <span class="live-badge" id="liveBadge">מתחבר</span>
+            <strong class="live-title" id="liveTitle">מתחבר למקורות פיקוד העורף...</strong>
+            <span class="live-areas" id="liveAreas"></span>
+        </div>
+        <div class="live-count">
+            <div class="value" id="liveCount">0</div>
+            <div class="label">אזורים פעילים</div>
+        </div>
+        <a class="live-link" href="/live">מרכז ההתרעות המלא ←</a>
+    </section>
+
+    <div class="progress-container" id="progress">
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="progress-text" id="progressText">מתחיל סריקה...</div>
+    </div>
+
+    <div class="stats-bar" id="statsBar"></div>
+
+    <div id="root">
+        <div class="spinner"></div>
+    </div>
+
+    <footer id="footer"></footer>
+
+    <script src="/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+{
+  "rules": [
+    {
+      "id": "home-automation-alert",
+      "name": "Send relevant alerts to a home automation service",
+      "enabled": false,
+      "match": {
+        "kinds": ["alert"],
+        "areas": ["אופקים", "באר שבע*"]
+      },
+      "cooldownSeconds": 30,
+      "maxExecutionsPerHour": 20,
+      "actions": [
+        {
+          "id": "home-webhook",
+          "type": "webhook",
+          "url": "https://automation.example.com/hooks/oref",
+          "headers": {
+            "X-Automation-Name": "oref-alert"
+          },
+          "payload": {
+            "eventId": "{{event.eventId}}",
+            "kind": "{{event.kind}}",
+            "title": "{{event.title}}",
+            "areas": "{{event.areas}}",
+            "occurredAt": "{{event.occurredAt}}"
+          },
+          "irreversible": false
+        }
+      ]
+    },
+    {
+      "id": "mqtt-alert",
+      "name": "Publish an alert to MQTT",
+      "enabled": false,
+      "match": {
+        "kinds": ["alert", "pre_alert"],
+        "minSeverity": 2
+      },
+      "cooldownSeconds": 10,
+      "actions": [
+        {
+          "id": "mqtt-publish",
+          "type": "mqtt",
+          "topic": "home/oref/{{event.kind}}",
+          "qos": 1,
+          "retain": false,
+          "payload": {
+            "eventId": "{{event.eventId}}",
+            "title": "{{event.title}}",
+            "areas": "{{event.areas}}"
+          },
+          "irreversible": false
+        }
+      ]
+    },
+    {
+      "id": "external-order-service-example",
+      "name": "Example only: call an independently secured order service",
+      "enabled": false,
+      "allowIrreversible": false,
+      "match": {
+        "kinds": ["alert"],
+        "areas": ["אזור מדויק בלבד"]
+      },
+      "cooldownSeconds": 3600,
+      "maxExecutionsPerHour": 1,
+      "actions": [
+        {
+          "id": "order-service",
+          "type": "webhook",
+          "url": "https://orders.example.com/oref-trigger",
+          "irreversible": true,
+          "confirmIrreversible": false,
+          "payload": {
+            "eventId": "{{event.eventId}}",
+            "areas": "{{event.areas}}"
+          }
+        }
+      ]
+    }
+  ]
+}

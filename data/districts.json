@@ -1,0 +1,8918 @@
+[
+  {
+    "label": "אבו גוש",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "אבו סנאן",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "אבו קרינאת",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "אבו תלול",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "אבטליון",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "אביאל",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "אביבים",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 0
+  },
+  {
+    "label": "אביגדור",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "אביגיל",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "אביחיל",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "אביעזר",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "אבירים",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "אביתר",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "אבן יהודה",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "אבן מנחם",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "אבן ספיר",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "אבן שמואל",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 30
+  },
+  {
+    "label": "אבני איתן",
+    "areaid": 2,
+    "areaname": "גולן",
+    "migun_time": 30
+  },
+  {
+    "label": "אבני חפץ",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "אבנת",
+    "areaid": 18,
+    "areaname": "ים המלח",
+    "migun_time": 90
+  },
+  {
+    "label": "אבשלום",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "אדורה",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "אדורים",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "אדמית",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "אדרת",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "אודים",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "אודם",
+    "areaid": 2,
+    "areaname": "גולן",
+    "migun_time": 15
+  },
+  {
+    "label": "אום אל פחם",
+    "areaid": 13,
+    "areaname": "ואדי ערה",
+    "migun_time": 90
+  },
+  {
+    "label": "אום אל קוטוף",
+    "areaid": 13,
+    "areaname": "ואדי ערה",
+    "migun_time": 90
+  },
+  {
+    "label": "אום אלג'נם (אזור התרעה ישן)",
+    "areaid": 34,
+    "areaname": "חיפה",
+    "migun_time": 60
+  },
+  {
+    "label": "אום בטין",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "אופקים",
+    "areaid": 16,
+    "areaname": "מערב הנגב",
+    "migun_time": 45
+  },
+  {
+    "label": "אור הגנוז",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 30
+  },
+  {
+    "label": "אור הנר",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "אור יהודה",
+    "areaid": 8,
+    "areaname": "דן",
+    "migun_time": 90
+  },
+  {
+    "label": "אור עקיבא",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "אורה",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "אורות",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "אורטל",
+    "areaid": 2,
+    "areaname": "גולן",
+    "migun_time": 30
+  },
+  {
+    "label": "אורים",
+    "areaid": 16,
+    "areaname": "מערב הנגב",
+    "migun_time": 30
+  },
+  {
+    "label": "אורנים",
+    "areaid": 36,
+    "areaname": "קריות",
+    "migun_time": 90
+  },
+  {
+    "label": "אורנית",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "אושה",
+    "areaid": 36,
+    "areaname": "קריות",
+    "migun_time": 90
+  },
+  {
+    "label": "אזור",
+    "areaid": 8,
+    "areaname": "דן",
+    "migun_time": 90
+  },
+  {
+    "label": "אזור תעשייה אלון התבור",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "אזור תעשייה אפק ולב הארץ",
+    "areaid": 21,
+    "areaname": "ירקון",
+    "migun_time": 90
+  },
+  {
+    "label": "אזור תעשייה אריאל",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "אזור תעשייה באר טוביה",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "אזור תעשייה בני יהודה",
+    "areaid": 2,
+    "areaname": "גולן",
+    "migun_time": 30
+  },
+  {
+    "label": "אזור תעשייה בר-לב",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "אזור תעשייה בראון",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "אזור תעשייה ברוש",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "אזור תעשייה ברקן",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "אזור תעשייה גדרה",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 60
+  },
+  {
+    "label": "אזור תעשייה דימונה",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "אזור תעשייה הדרומי אשקלון",
+    "areaid": 19,
+    "areaname": "מערב לכיש",
+    "migun_time": 30
+  },
+  {
+    "label": "אזור תעשייה הר טוב - צרעה",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "אזור תעשייה חבל מודיעין שוהם",
+    "areaid": 21,
+    "areaname": "ירקון",
+    "migun_time": 90
+  },
+  {
+    "label": "אזור תעשייה חצור הגלילית (אזור התרעה ישן)",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 30
+  },
+  {
+    "label": "אזור תעשייה טירה (אזור התרעה ישן)",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "אזור תעשייה טמרה (אזור התרעה ישן)",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 60
+  },
+  {
+    "label": "אזור תעשייה יקנעם עילית",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "אזור תעשייה כנות",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 60
+  },
+  {
+    "label": "אזור תעשייה כפר יונה",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "אזור תעשייה כרמיאל",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "אזור תעשייה מבוא כרמל",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "אזור תעשייה מבואות הגלבוע",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "אזור תעשייה מישור אדומים",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "אזור תעשייה מיתרים",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "אזור תעשייה נ.ע.מ",
+    "areaid": 16,
+    "areaname": "מערב הנגב",
+    "migun_time": 30
+  },
+  {
+    "label": "אזור תעשייה ניר עציון",
+    "areaid": 11,
+    "areaname": "חוף הכרמל",
+    "migun_time": 90
+  },
+  {
+    "label": "אזור תעשייה נשר - רמלה",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "אזור תעשייה עד הלום",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "אזור תעשייה עידן הנגב",
+    "areaid": 25,
+    "areaname": "מרכז הנגב",
+    "migun_time": 45
+  },
+  {
+    "label": "אזור תעשייה עמק חפר",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "אזור תעשייה צ.ח.ר",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "אזור תעשייה ציפורית",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "אזור תעשייה צפוני אשקלון",
+    "areaid": 19,
+    "areaname": "מערב לכיש",
+    "migun_time": 30
+  },
+  {
+    "label": "אזור תעשייה קדמת גליל",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "אזור תעשייה קיסריה",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "אזור תעשייה קריית ביאליק",
+    "areaid": 36,
+    "areaname": "קריות",
+    "migun_time": 90
+  },
+  {
+    "label": "אזור תעשייה קריית גת",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "אזור תעשייה רבדים",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 60
+  },
+  {
+    "label": "אזור תעשייה רותם",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "אזור תעשייה רמת דלתון",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "אזור תעשייה שחורת",
+    "areaid": 1,
+    "areaname": "אילת",
+    "migun_time": 90
+  },
+  {
+    "label": "אזור תעשייה שחק",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "אזור תעשייה שער בנימין",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "אזור תעשייה שער נעמן",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 90
+  },
+  {
+    "label": "אזור תעשייה תימורים",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "אזור תעשייה תרדיון",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "אחווה",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "אחוזם",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 30
+  },
+  {
+    "label": "אחוזת ברק",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "אחיה",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "אחיהוד",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "אחיטוב",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "אחיסמך",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "אחיעזר",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "איבטין",
+    "areaid": 36,
+    "areaname": "קריות",
+    "migun_time": 90
+  },
+  {
+    "label": "איבי הנחל",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "איזור תעשייה מילואות צפון",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "אייל",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "איילת השחר",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 30
+  },
+  {
+    "label": "איירפורט סיטי",
+    "areaid": 21,
+    "areaname": "ירקון",
+    "migun_time": 90
+  },
+  {
+    "label": "אילון",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "אילות",
+    "areaid": 1,
+    "areaname": "אילת",
+    "migun_time": 90
+  },
+  {
+    "label": "אילניה",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 90
+  },
+  {
+    "label": "אילת",
+    "areaid": 1,
+    "areaname": "אילת",
+    "migun_time": 90
+  },
+  {
+    "label": "אירוס",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "איתמר",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "איתן",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 30
+  },
+  {
+    "label": "אכסאל",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "אל סייד",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "אל עזי",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "אל עמארני, אל מסק",
+    "areaid": 29,
+    "areaname": "ערבה",
+    "migun_time": 90
+  },
+  {
+    "label": "אל עריאן",
+    "areaid": 13,
+    "areaname": "ואדי ערה",
+    "migun_time": 90
+  },
+  {
+    "label": "אל פורעה",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "אל רום",
+    "areaid": 2,
+    "areaname": "גולן",
+    "migun_time": 15
+  },
+  {
+    "label": "אלומה",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "אלומות",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "אלון",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "אלון הגליל",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 60
+  },
+  {
+    "label": "אלון מורה",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "אלון שבות",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "אלוני אבא",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "אלוני הבשן",
+    "areaid": 2,
+    "areaname": "גולן",
+    "migun_time": 15
+  },
+  {
+    "label": "אלוני יצחק",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "אלונים",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "אלי עד",
+    "areaid": 2,
+    "areaname": "גולן",
+    "migun_time": 30
+  },
+  {
+    "label": "אליאב",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 60
+  },
+  {
+    "label": "אליכין",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "אליפז ומכרות תמנע",
+    "areaid": 29,
+    "areaname": "ערבה",
+    "migun_time": 90
+  },
+  {
+    "label": "אליפלט",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "אליקים",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "אלישיב",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "אלישמע",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "אלמגור",
+    "areaid": 35,
+    "areaname": "קצרין",
+    "migun_time": 45
+  },
+  {
+    "label": "אלמוג",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "אלעד",
+    "areaid": 21,
+    "areaname": "ירקון",
+    "migun_time": 90
+  },
+  {
+    "label": "אלעזר",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "אלפי מנשה",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "אלקוש",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "אלקנה",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "אמונים",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "אמירים",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 30
+  },
+  {
+    "label": "אמנון",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "אמץ",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "אמציה (אזור התרעה ישן)",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 60
+  },
+  {
+    "label": "אניעם",
+    "areaid": 35,
+    "areaname": "קצרין",
+    "migun_time": 30
+  },
+  {
+    "label": "אעבלין",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "אעירה השחר",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "אפיק",
+    "areaid": 2,
+    "areaname": "גולן",
+    "migun_time": 30
+  },
+  {
+    "label": "אפיקים",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "אפק",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 90
+  },
+  {
+    "label": "אפקה",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "אפרת",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "ארבל",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "ארגמן",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "ארז",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "אריאל",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "ארסוף",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "אש קודש",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "אשבול",
+    "areaid": 16,
+    "areaname": "מערב הנגב",
+    "migun_time": 30
+  },
+  {
+    "label": "אשבל",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "אשדוד - א,ב,ד,ה",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "אשדוד - איזור תעשייה צפוני",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "אשדוד - ג,ו,ז",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "אשדוד - ח,ט,י,יג,יד,טז",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "אשדוד -יא,יב,טו,יז,מרינה,סיטי",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "אשדות יעקב",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "אשחר",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "אשכולות",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 60
+  },
+  {
+    "label": "אשל הנשיא",
+    "areaid": 16,
+    "areaname": "מערב הנגב",
+    "migun_time": 45
+  },
+  {
+    "label": "אשלים",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "אשקלון - דרום",
+    "areaid": 19,
+    "areaname": "מערב לכיש",
+    "migun_time": 30
+  },
+  {
+    "label": "אשקלון - צפון",
+    "areaid": 19,
+    "areaname": "מערב לכיש",
+    "migun_time": 30
+  },
+  {
+    "label": "אשרת",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "אשתאול",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "אשתמוע",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "אתר דודאים",
+    "areaid": 25,
+    "areaname": "מרכז הנגב",
+    "migun_time": 45
+  },
+  {
+    "label": "אתר ההנצחה גולני",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "באקה אל גרבייה",
+    "areaid": 13,
+    "areaname": "ואדי ערה",
+    "migun_time": 90
+  },
+  {
+    "label": "באר אורה",
+    "areaid": 29,
+    "areaname": "ערבה",
+    "migun_time": 90
+  },
+  {
+    "label": "באר גנים",
+    "areaid": 19,
+    "areaname": "מערב לכיש",
+    "migun_time": 30
+  },
+  {
+    "label": "באר טוביה",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "באר יעקב",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "באר מילכה",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 60
+  },
+  {
+    "label": "באר שבע - דרום",
+    "areaid": 25,
+    "areaname": "מרכז הנגב",
+    "migun_time": 60
+  },
+  {
+    "label": "באר שבע - מזרח",
+    "areaid": 25,
+    "areaname": "מרכז הנגב",
+    "migun_time": 60
+  },
+  {
+    "label": "באר שבע - מערב",
+    "areaid": 25,
+    "areaname": "מרכז הנגב",
+    "migun_time": 60
+  },
+  {
+    "label": "באר שבע - צפון",
+    "areaid": 25,
+    "areaname": "מרכז הנגב",
+    "migun_time": 60
+  },
+  {
+    "label": "בארות יצחק",
+    "areaid": 21,
+    "areaname": "ירקון",
+    "migun_time": 90
+  },
+  {
+    "label": "בארותיים",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "בארי",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "בוסתן הגליל",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "בועיינה-נוג'ידאת",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "בוקעתא",
+    "areaid": 2,
+    "areaname": "גולן",
+    "migun_time": 15
+  },
+  {
+    "label": "בורגתה",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "בחלק מהאזורים בארץ",
+    "areaid": 8,
+    "areaname": "דן",
+    "migun_time": 0
+  },
+  {
+    "label": "בחן",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "בטחה",
+    "areaid": 16,
+    "areaname": "מערב הנגב",
+    "migun_time": 45
+  },
+  {
+    "label": "בי\"ס כרמים בנימינה",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "ביצרון",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 60
+  },
+  {
+    "label": "ביר אלמכסור",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "ביר הדאג'",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "ביריה",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 30
+  },
+  {
+    "label": "בית אורן",
+    "areaid": 24,
+    "areaname": "יערות הכרמל",
+    "migun_time": 90
+  },
+  {
+    "label": "בית אל",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "בית אלעזרי",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 60
+  },
+  {
+    "label": "בית אלפא וחפציבה",
+    "areaid": 4,
+    "areaname": "בקעת בית שאן",
+    "migun_time": 90
+  },
+  {
+    "label": "בית אריה",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "בית ברל",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "בית ג'אן",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 30
+  },
+  {
+    "label": "בית גוברין",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 60
+  },
+  {
+    "label": "בית גמליאל",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 60
+  },
+  {
+    "label": "בית דגן",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "בית הברכה",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "בית הגדי",
+    "areaid": 16,
+    "areaname": "מערב הנגב",
+    "migun_time": 30
+  },
+  {
+    "label": "בית הלוי",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "בית הלל",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "בית העלמין החדש נהריה",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 30
+  },
+  {
+    "label": "בית העלמין החדש עכו",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "בית העמק",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "בית הערבה",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "בית השיטה",
+    "areaid": 4,
+    "areaname": "בקעת בית שאן",
+    "migun_time": 90
+  },
+  {
+    "label": "בית זית",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "בית זרע",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "בית חג\"י",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "בית חגלה",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "בית חורון",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "בית חזון (אזור התרעה ישן)",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "בית חלקיה",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 60
+  },
+  {
+    "label": "בית חנן",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "בית חנניה",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "בית חרות",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "בית חשמונאי",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "בית יהושע",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "בית יוסף",
+    "areaid": 4,
+    "areaname": "בקעת בית שאן",
+    "migun_time": 90
+  },
+  {
+    "label": "בית ינאי",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "בית יצחק - שער חפר",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "בית ירח",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "בית יתיר",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "בית לחם הגלילית",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "בית מאיר",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "בית נחמיה",
+    "areaid": 21,
+    "areaname": "ירקון",
+    "migun_time": 90
+  },
+  {
+    "label": "בית ניר",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 60
+  },
+  {
+    "label": "בית נקופה",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "בית סוהר צלמון",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "בית סוהר קישון",
+    "areaid": 36,
+    "areaname": "קריות",
+    "migun_time": 90
+  },
+  {
+    "label": "בית ספר שדה מירון",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "בית עובד",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "בית עוזיאל",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "בית עזרא",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "בית עלמין מורשה",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "בית עלמין תל רגב",
+    "areaid": 36,
+    "areaname": "קריות",
+    "migun_time": 90
+  },
+  {
+    "label": "בית עריף",
+    "areaid": 21,
+    "areaname": "ירקון",
+    "migun_time": 90
+  },
+  {
+    "label": "בית צבי",
+    "areaid": 11,
+    "areaname": "חוף הכרמל",
+    "migun_time": 90
+  },
+  {
+    "label": "בית קמה",
+    "areaid": 25,
+    "areaname": "מרכז הנגב",
+    "migun_time": 45
+  },
+  {
+    "label": "בית קשת",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 90
+  },
+  {
+    "label": "בית רימון",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 90
+  },
+  {
+    "label": "בית שאן",
+    "areaid": 4,
+    "areaname": "בקעת בית שאן",
+    "migun_time": 90
+  },
+  {
+    "label": "בית שמש",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "בית שערים",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "בית שקמה",
+    "areaid": 19,
+    "areaname": "מערב לכיש",
+    "migun_time": 30
+  },
+  {
+    "label": "ביתן אהרן",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "ביתר עילית",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "בלפוריה",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "בן זכאי",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 60
+  },
+  {
+    "label": "בן עמי",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 30
+  },
+  {
+    "label": "בן שמן",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "בני אדם",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "בני ברק",
+    "areaid": 8,
+    "areaname": "דן",
+    "migun_time": 90
+  },
+  {
+    "label": "בני דקלים",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 60
+  },
+  {
+    "label": "בני דרום",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 45
+  },
+  {
+    "label": "בני דרור",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "בני יהודה וגבעת יואב",
+    "areaid": 2,
+    "areaname": "גולן",
+    "migun_time": 30
+  },
+  {
+    "label": "בני נצרים",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 30
+  },
+  {
+    "label": "בני עטרות",
+    "areaid": 21,
+    "areaname": "ירקון",
+    "migun_time": 90
+  },
+  {
+    "label": "בני עי''ש",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 60
+  },
+  {
+    "label": "בני ציון",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "בני ראם",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 60
+  },
+  {
+    "label": "בניה",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 60
+  },
+  {
+    "label": "בנימינה",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "בסמת טבעון",
+    "areaid": 36,
+    "areaname": "קריות",
+    "migun_time": 90
+  },
+  {
+    "label": "בענה",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "בצרה",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "בצת",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "בקוע",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "בקעות",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "בר גיורא",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "בר יוחאי",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 30
+  },
+  {
+    "label": "בר כוכבא",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "ברוכין",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "ברור חיל",
+    "areaid": 16,
+    "areaname": "מערב הנגב",
+    "migun_time": 30
+  },
+  {
+    "label": "ברוש",
+    "areaid": 16,
+    "areaname": "מערב הנגב",
+    "migun_time": 30
+  },
+  {
+    "label": "ברחבי הארץ",
+    "areaid": 8,
+    "areaname": "דן",
+    "migun_time": 0
+  },
+  {
+    "label": "ברטעה",
+    "areaid": 13,
+    "areaname": "ואדי ערה",
+    "migun_time": 90
+  },
+  {
+    "label": "ברכיה",
+    "areaid": 19,
+    "areaname": "מערב לכיש",
+    "migun_time": 30
+  },
+  {
+    "label": "ברעם",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "ברקאי",
+    "areaid": 13,
+    "areaname": "ואדי ערה",
+    "migun_time": 90
+  },
+  {
+    "label": "ברקן",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "ברקת",
+    "areaid": 21,
+    "areaname": "ירקון",
+    "migun_time": 90
+  },
+  {
+    "label": "בת הדר",
+    "areaid": 19,
+    "areaname": "מערב לכיש",
+    "migun_time": 30
+  },
+  {
+    "label": "בת חן",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "בת חפר",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "בת ים",
+    "areaid": 8,
+    "areaname": "דן",
+    "migun_time": 90
+  },
+  {
+    "label": "בת עין",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "בת שלמה",
+    "areaid": 11,
+    "areaname": "חוף הכרמל",
+    "migun_time": 90
+  },
+  {
+    "label": "בתי מלון ים המלח",
+    "areaid": 18,
+    "areaname": "ים המלח",
+    "migun_time": 90
+  },
+  {
+    "label": "בתרונות",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "ג'דידה מכר",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "ג'וליס",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "ג'לג'וליה",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "ג'סר א-זרקא",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "ג'ש - גוש חלב",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "ג'ת",
+    "areaid": 13,
+    "areaname": "ואדי ערה",
+    "migun_time": 90
+  },
+  {
+    "label": "גאולי תימן",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "גאולים",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "גאליה",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 60
+  },
+  {
+    "label": "גבולות",
+    "areaid": 16,
+    "areaname": "מערב הנגב",
+    "migun_time": 30
+  },
+  {
+    "label": "גבים, מכללת ספיר",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "גבע בנימין",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "גבע כרמל",
+    "areaid": 11,
+    "areaname": "חוף הכרמל",
+    "migun_time": 90
+  },
+  {
+    "label": "גבעון החדשה",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "גבעות",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "גבעות בר",
+    "areaid": 25,
+    "areaname": "מרכז הנגב",
+    "migun_time": 45
+  },
+  {
+    "label": "גבעות עדן",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "גבעת אבני",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "גבעת אלה",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "גבעת אסף",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "גבעת ברנר",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "גבעת הראל",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "גבעת הרואה",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "גבעת השלושה",
+    "areaid": 21,
+    "areaname": "ירקון",
+    "migun_time": 90
+  },
+  {
+    "label": "גבעת וולפסון",
+    "areaid": 24,
+    "areaname": "יערות הכרמל",
+    "migun_time": 90
+  },
+  {
+    "label": "גבעת וושינגטון",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 60
+  },
+  {
+    "label": "גבעת זאב",
+    "areaid": 20,
+    "areaname": "ירושלים",
+    "migun_time": 90
+  },
+  {
+    "label": "גבעת חביבה (אזור התרעה ישן)",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "גבעת חיים איחוד",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "גבעת חיים מאוחד",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "גבעת חן",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "גבעת יערים",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "גבעת ישעיהו",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 60
+  },
+  {
+    "label": "גבעת כ''ח",
+    "areaid": 21,
+    "areaname": "ירקון",
+    "migun_time": 90
+  },
+  {
+    "label": "גבעת ניל''י",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "גבעת עדה",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "גבעת עוז",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "גבעת פורת יוסף",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "גבעת שמואל",
+    "areaid": 8,
+    "areaname": "דן",
+    "migun_time": 90
+  },
+  {
+    "label": "גבעת שפירא",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "גבעתי",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "גבעתיים",
+    "areaid": 8,
+    "areaname": "דן",
+    "migun_time": 90
+  },
+  {
+    "label": "גברעם",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "גבת",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "גדות",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 30
+  },
+  {
+    "label": "גדעונה",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "גדרה",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 60
+  },
+  {
+    "label": "גונן",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "גופנה",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "גורן",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "גורנות הגליל",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "גזית",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "גזר",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "גיאה",
+    "areaid": 19,
+    "areaname": "מערב לכיש",
+    "migun_time": 30
+  },
+  {
+    "label": "גיבתון",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "גיזו",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "גילת",
+    "areaid": 16,
+    "areaname": "מערב הנגב",
+    "migun_time": 45
+  },
+  {
+    "label": "גינוסר",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "גינתון",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "גיתה",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 30
+  },
+  {
+    "label": "גיתית",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "גלאון",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "גלגל",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "גלעד",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "גמזו",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "גן הדרום",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 60
+  },
+  {
+    "label": "גן השומרון",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "גן חיים",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "גן יאשיה",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "גן יבנה",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "גן נר",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "גן שורק",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "גן שלמה",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "גן שמואל",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "גנות",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "גנות הדר",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "גני הדר",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "גני חוגה",
+    "areaid": 4,
+    "areaname": "בקעת בית שאן",
+    "migun_time": 90
+  },
+  {
+    "label": "גני טל",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 60
+  },
+  {
+    "label": "גני יוחנן",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "גני עם",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "גני תקווה",
+    "areaid": 8,
+    "areaname": "דן",
+    "migun_time": 90
+  },
+  {
+    "label": "גניגר",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "געש",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "געתון",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 30
+  },
+  {
+    "label": "גפן",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 60
+  },
+  {
+    "label": "גרופית",
+    "areaid": 29,
+    "areaname": "ערבה",
+    "migun_time": 90
+  },
+  {
+    "label": "גשור",
+    "areaid": 2,
+    "areaname": "גולן",
+    "migun_time": 30
+  },
+  {
+    "label": "גשר",
+    "areaid": 4,
+    "areaname": "בקעת בית שאן",
+    "migun_time": 90
+  },
+  {
+    "label": "גשר הזיו",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 30
+  },
+  {
+    "label": "גת",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "גת רימון",
+    "areaid": 21,
+    "areaname": "ירקון",
+    "migun_time": 90
+  },
+  {
+    "label": "דבוריה",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "דביר",
+    "areaid": 25,
+    "areaname": "מרכז הנגב",
+    "migun_time": 45
+  },
+  {
+    "label": "דברת",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "דגניה א",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "דגניה ב",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "דוב''ב",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "דולב",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "דור (אזור התרעה ישן)",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 60
+  },
+  {
+    "label": "דור, נחשולים",
+    "areaid": 11,
+    "areaname": "חוף הכרמל",
+    "migun_time": 90
+  },
+  {
+    "label": "דורות",
+    "areaid": 16,
+    "areaname": "מערב הנגב",
+    "migun_time": 30
+  },
+  {
+    "label": "דורות עילית",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "דחי",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "דימונה",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "דיר אל-אסד",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "דיר חנא",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "דישון",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "דליה",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "דלית אל כרמל",
+    "areaid": 24,
+    "areaname": "יערות הכרמל",
+    "migun_time": 90
+  },
+  {
+    "label": "דלתון",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "דמיידה",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "דניאל (אזור התרעה ישן)",
+    "areaid": 16,
+    "areaname": "מערב הנגב",
+    "migun_time": 45
+  },
+  {
+    "label": "דפנה",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "דקל",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "האון",
+    "areaid": 35,
+    "areaname": "קצרין",
+    "migun_time": 45
+  },
+  {
+    "label": "הבונים",
+    "areaid": 11,
+    "areaname": "חוף הכרמל",
+    "migun_time": 90
+  },
+  {
+    "label": "הגבעה הצהובה",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "הגושרים",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "הדר עם",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "הוד השרון",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "הודיה",
+    "areaid": 19,
+    "areaname": "מערב לכיש",
+    "migun_time": 30
+  },
+  {
+    "label": "הודיות",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "הושעיה",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "הזורעים",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "החווה של אורי כהן",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "החווה של זוהר",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "החווה של יאיא",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "החווה של מנחם",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "החווה של עשהאל",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "החותרים",
+    "areaid": 34,
+    "areaname": "חיפה",
+    "migun_time": 90
+  },
+  {
+    "label": "היוגב",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "היישוב היהודי חברון",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "הילה",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "המעפיל",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "המרכז האקדמי רופין",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "הסוללים",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "העוגן",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "הר אדר",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "הר ברכה",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "הר גילה",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "הר חלוץ",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 30
+  },
+  {
+    "label": "הר עמשא",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "הראל",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "הרדוף",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 60
+  },
+  {
+    "label": "הרצליה - מערב",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "הרצליה - מרכז וגליל ים",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "הררית יחד",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "ואדי אל חמאם",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "ואדי אל נעם דרום",
+    "areaid": 25,
+    "areaname": "מרכז הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "ורד יריחו",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "ורדון",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "זבדיאל",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "זוהר",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 30
+  },
+  {
+    "label": "זיקים",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "זיתן",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "זכרון יעקב",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "זכריה",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 60
+  },
+  {
+    "label": "זמר",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "זמרת, שובה",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "זנוח",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "זרועה",
+    "areaid": 16,
+    "areaname": "מערב הנגב",
+    "migun_time": 30
+  },
+  {
+    "label": "זרזיר",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "זרחיה",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "זרעית",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "ח'וואלד (אזור התרעה ישן)",
+    "areaid": 34,
+    "areaname": "חיפה",
+    "migun_time": 60
+  },
+  {
+    "label": "חבצלת השרון וצוקי ים",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "חג'אג'רה",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "חגור",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "חגלה",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "חד נס",
+    "areaid": 35,
+    "areaname": "קצרין",
+    "migun_time": 45
+  },
+  {
+    "label": "חדיד",
+    "areaid": 21,
+    "areaname": "ירקון",
+    "migun_time": 90
+  },
+  {
+    "label": "חדרה - מזרח",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "חדרה - מערב",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "חדרה - מרכז",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "חדרה - נווה חיים",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות אביה",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות אביחי",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות אל נווה",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות אלחי",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות ארץ האיילים",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות אשכולות",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 60
+  },
+  {
+    "label": "חוות בניהו",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות גלעד",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות גנות",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות דרומא",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות הרועה העברי",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות הרשאש",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות חנינא",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות טואמין",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות טליה",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות יאיר",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות יד השומר",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות יויו",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות יזרעם (אזור התרעה ישן)",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "חוות ינון",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות מגדלים",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות מגנזי",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות מדבר חבר",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות מור ואברהם",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות מלאכי אברהם",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות מלכיאל",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות מנחם",
+    "areaid": 18,
+    "areaname": "ים המלח",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות מעלה אהוביה",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות מקנה יהודה",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות מרום שמואל",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות נווה צוף",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות נוף אב\"י",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות נחל שילה",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות נחלת אבות",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות נחלת צבי",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות עדן",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות עולם חסד",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות עמיאל",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות פריאל",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות צאן קדר",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות צרידה",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות קשואלה",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות ראש תאנה",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות שדה",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות שוביאל",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות שחרית",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "חוות תלם צפון",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "חולדה",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "חולון",
+    "areaid": 8,
+    "areaname": "דן",
+    "migun_time": 90
+  },
+  {
+    "label": "חולית",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "חולתה",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 30
+  },
+  {
+    "label": "חומש",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "חוסן",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "חוסנייה",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "חוף אכזיב",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "חוף בצת",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "חוף זיקים",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "חוף קליה",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "חופית",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "חוקוק",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "חורה",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "חורפיש",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "חורשים",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "חזון",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "חיבת ציון",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "חיננית",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "חיפה - בת גלים ק.אליעזר",
+    "areaid": 34,
+    "areaname": "חיפה",
+    "migun_time": 90
+  },
+  {
+    "label": "חיפה - כרמל, הדר ועיר תחתית",
+    "areaid": 34,
+    "areaname": "חיפה",
+    "migun_time": 90
+  },
+  {
+    "label": "חיפה - מערב",
+    "areaid": 34,
+    "areaname": "חיפה",
+    "migun_time": 90
+  },
+  {
+    "label": "חיפה - מפרץ",
+    "areaid": 34,
+    "areaname": "חיפה",
+    "migun_time": 90
+  },
+  {
+    "label": "חיפה - נווה שאנן ורמות כרמל",
+    "areaid": 34,
+    "areaname": "חיפה",
+    "migun_time": 90
+  },
+  {
+    "label": "חיפה - קריית חיים ושמואל",
+    "areaid": 34,
+    "areaname": "חיפה",
+    "migun_time": 90
+  },
+  {
+    "label": "חירן",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "חלץ",
+    "areaid": 19,
+    "areaname": "מערב לכיש",
+    "migun_time": 30
+  },
+  {
+    "label": "חמד",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "חמדיה",
+    "areaid": 4,
+    "areaname": "בקעת בית שאן",
+    "migun_time": 90
+  },
+  {
+    "label": "חמדת",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "חמדת ימים",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 30
+  },
+  {
+    "label": "חמרה",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "חמת גדר",
+    "areaid": 35,
+    "areaname": "קצרין",
+    "migun_time": 45
+  },
+  {
+    "label": "חניאל",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "חניון הנתיב מהיר (אזור התרעה ישן)",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "חניון רעים אנדרטת הנובה",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "חניתה",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "חנתון",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 60
+  },
+  {
+    "label": "חספין",
+    "areaid": 2,
+    "areaname": "גולן",
+    "migun_time": 15
+  },
+  {
+    "label": "חפץ חיים",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 60
+  },
+  {
+    "label": "חצב",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 60
+  },
+  {
+    "label": "חצבה",
+    "areaid": 29,
+    "areaname": "ערבה",
+    "migun_time": 90
+  },
+  {
+    "label": "חצור",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "חצור הגלילית",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "חצרים",
+    "areaid": 25,
+    "areaname": "מרכז הנגב",
+    "migun_time": 60
+  },
+  {
+    "label": "חרב לאת",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "חרוצים",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "חרות",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "חריש",
+    "areaid": 13,
+    "areaname": "ואדי ערה",
+    "migun_time": 90
+  },
+  {
+    "label": "חרמש",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "חרמש דרום",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "חרשה",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "חרשים",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 30
+  },
+  {
+    "label": "חשמונאים",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "טבריה",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "טובא זנגריה",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "טורעאן",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "טייבה",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "טייבה בגלבוע",
+    "areaid": 4,
+    "areaname": "בקעת בית שאן",
+    "migun_time": 90
+  },
+  {
+    "label": "טירה",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "טירת יהודה",
+    "areaid": 21,
+    "areaname": "ירקון",
+    "migun_time": 90
+  },
+  {
+    "label": "טירת כרמל",
+    "areaid": 34,
+    "areaname": "חיפה",
+    "migun_time": 90
+  },
+  {
+    "label": "טירת צבי",
+    "areaid": 4,
+    "areaname": "בקעת בית שאן",
+    "migun_time": 90
+  },
+  {
+    "label": "טל - אל",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "טל מנשה",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "טל שחר",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "טללים",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "טלמון",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "טמרה",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "טמרה בגלבוע",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "טנא עומרים",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "טפחות",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "יבוא דודי",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "יבול",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "יבנאל",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "יבנה",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 60
+  },
+  {
+    "label": "יגור",
+    "areaid": 36,
+    "areaname": "קריות",
+    "migun_time": 90
+  },
+  {
+    "label": "יגל",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "יד בנימין",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 60
+  },
+  {
+    "label": "יד השמונה",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "יד חנה",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "יד מרדכי",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "יד נתן",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 30
+  },
+  {
+    "label": "יד רמב''ם",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "יהוד מונוסון",
+    "areaid": 8,
+    "areaname": "דן",
+    "migun_time": 90
+  },
+  {
+    "label": "יהל",
+    "areaid": 29,
+    "areaname": "ערבה",
+    "migun_time": 90
+  },
+  {
+    "label": "יובלים",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "יודפת",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "יונתן",
+    "areaid": 2,
+    "areaname": "גולן",
+    "migun_time": 30
+  },
+  {
+    "label": "יושיביה",
+    "areaid": 16,
+    "areaname": "מערב הנגב",
+    "migun_time": 15
+  },
+  {
+    "label": "יזרעאל",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "יחיעם",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 30
+  },
+  {
+    "label": "יטבתה",
+    "areaid": 29,
+    "areaname": "ערבה",
+    "migun_time": 90
+  },
+  {
+    "label": "ייט''ב",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "יכיני",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "ינוב",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "ינוח ג'ת",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 30
+  },
+  {
+    "label": "ינון",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 60
+  },
+  {
+    "label": "יסוד המעלה",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 30
+  },
+  {
+    "label": "יסודות",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "יסעור",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "יעבץ, יעף",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "יעד",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "יעף (אזור התרעה ישן)",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "יערה",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "יפיע",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "יפית",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "יפעת",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "יפתח",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "יצהר",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "יציץ",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "יקום",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "יקיר",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "יקנעם המושבה והזורע",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "יקנעם עילית",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "יראון",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "ירדנה",
+    "areaid": 4,
+    "areaname": "בקעת בית שאן",
+    "migun_time": 90
+  },
+  {
+    "label": "ירוחם",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "ירושלים - אזור תעשייה עטרות",
+    "areaid": 20,
+    "areaname": "ירושלים",
+    "migun_time": 90
+  },
+  {
+    "label": "ירושלים - דרום",
+    "areaid": 20,
+    "areaname": "ירושלים",
+    "migun_time": 90
+  },
+  {
+    "label": "ירושלים - כפר עקב",
+    "areaid": 20,
+    "areaname": "ירושלים",
+    "migun_time": 90
+  },
+  {
+    "label": "ירושלים - מזרח",
+    "areaid": 20,
+    "areaname": "ירושלים",
+    "migun_time": 90
+  },
+  {
+    "label": "ירושלים - מערב",
+    "areaid": 20,
+    "areaname": "ירושלים",
+    "migun_time": 90
+  },
+  {
+    "label": "ירושלים - מרכז",
+    "areaid": 20,
+    "areaname": "ירושלים",
+    "migun_time": 90
+  },
+  {
+    "label": "ירושלים - צפון",
+    "areaid": 20,
+    "areaname": "ירושלים",
+    "migun_time": 90
+  },
+  {
+    "label": "ירחיב",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "ירכא",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "ירקונה",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "ישובי אומן",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "ישובי יעל",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "ישעי",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "ישרש",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "יתד",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "כאבול",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "כאוכב אבו אלהיג'א",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "כברי",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 30
+  },
+  {
+    "label": "כדורי",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 90
+  },
+  {
+    "label": "כוכב השחר",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "כוכב יאיר - צור יגאל",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "כוכב יעקב",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "כוכב מיכאל",
+    "areaid": 19,
+    "areaname": "מערב לכיש",
+    "migun_time": 30
+  },
+  {
+    "label": "כורזים ורד הגליל",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "כחל",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 60
+  },
+  {
+    "label": "כינרת מושבה",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "כינרת קבוצה",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "כיסופים",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "כישור",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "כל הארץ",
+    "areaid": 8,
+    "areaname": "דן",
+    "migun_time": 0
+  },
+  {
+    "label": "כליל",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "כלנית",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "כמהין",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 60
+  },
+  {
+    "label": "כמון - כמאנה מזרחית",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 45
+  },
+  {
+    "label": "כנות",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 60
+  },
+  {
+    "label": "כנף",
+    "areaid": 35,
+    "areaname": "קצרין",
+    "migun_time": 45
+  },
+  {
+    "label": "כסייפה",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "כסלון",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "כסרא סמיע",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 30
+  },
+  {
+    "label": "כעביה (אזור התרעה ישן)",
+    "areaid": 34,
+    "areaname": "חיפה",
+    "migun_time": 60
+  },
+  {
+    "label": "כעביה טבאש",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר אביב",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 60
+  },
+  {
+    "label": "כפר אדומים",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר אוריה",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר אחים",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "כפר אלדד",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר ביאליק",
+    "areaid": 36,
+    "areaname": "קריות",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר ביל''ו",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר בלום",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "כפר בן נון",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר ברא",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר ברוך",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר גדעון",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר גלים",
+    "areaid": 34,
+    "areaname": "חיפה",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר גליקסון",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר גלעדי",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "כפר גמילה מלכישוע",
+    "areaid": 4,
+    "areaname": "בקעת בית שאן",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר דניאל",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר האורנים",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר החורש",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר המכבי",
+    "areaid": 36,
+    "areaname": "קריות",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר הנגיד",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 60
+  },
+  {
+    "label": "כפר הנוער ימין אורד (אזור התרעה ישן)",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 60
+  },
+  {
+    "label": "כפר הנוער קריית יערים",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר הנוקדים",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר הנשיא",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "כפר הס",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר הרא''ה",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר הרי''ף וצומת ראם",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 60
+  },
+  {
+    "label": "כפר ויתקין",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר ורבורג",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "כפר ורדים",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 30
+  },
+  {
+    "label": "כפר זוהרים",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 60
+  },
+  {
+    "label": "כפר זיתים",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "כפר ח'וואלד",
+    "areaid": 36,
+    "areaname": "קריות",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר חב''ד",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר חיטים",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "כפר חיים",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר חנניה",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "כפר חסידים",
+    "areaid": 36,
+    "areaname": "קריות",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר חרוב",
+    "areaid": 2,
+    "areaname": "גולן",
+    "migun_time": 30
+  },
+  {
+    "label": "כפר טבאש (אזור התרעה ישן)",
+    "areaid": 34,
+    "areaname": "חיפה",
+    "migun_time": 60
+  },
+  {
+    "label": "כפר טרומן",
+    "areaid": 21,
+    "areaname": "ירקון",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר יאסיף",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "כפר ידידיה",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר יהושע",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר יובל",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "כפר יונה",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר יחזקאל",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר יעבץ (אזור התרעה ישן)",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר כמא",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "כפר כנא",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר מונש",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר מימון ותושיה",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "כפר מל''ל",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר מנדא",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "כפר מנחם",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 60
+  },
+  {
+    "label": "כפר מסריק",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 60
+  },
+  {
+    "label": "כפר מצר",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר מרדכי",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 60
+  },
+  {
+    "label": "כפר נהר הירדן",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "כפר נוער בן שמן",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר נטר",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר סאלד",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "כפר סבא",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר סילבר",
+    "areaid": 19,
+    "areaname": "מערב לכיש",
+    "migun_time": 30
+  },
+  {
+    "label": "כפר סירקין",
+    "areaid": 21,
+    "areaname": "ירקון",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר עבודה",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר עזה",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "כפר עציון",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר פינס",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר קאסם",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר קיש",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר קרע",
+    "areaid": 13,
+    "areaname": "ואדי ערה",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר רופין",
+    "areaid": 4,
+    "areaname": "בקעת בית שאן",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר רות",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר שמאי",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 30
+  },
+  {
+    "label": "כפר שמואל",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר שמריהו",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר תבור",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר תפוח",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "כפר תקווה",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "כרכום",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "כרם ביבנה",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 60
+  },
+  {
+    "label": "כרם בן זמרה",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "כרם מהר''ל",
+    "areaid": 11,
+    "areaname": "חוף הכרמל",
+    "migun_time": 90
+  },
+  {
+    "label": "כרם רעים",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "כרם שלום",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "כרמי יוסף",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "כרמי צור",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "כרמי קטיף (אזור התרעה ישן)",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 60
+  },
+  {
+    "label": "כרמי קטיף ואמציה",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 60
+  },
+  {
+    "label": "כרמיאל",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "כרמיה",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "כרמים",
+    "areaid": 25,
+    "areaname": "מרכז הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "כרמית",
+    "areaid": 25,
+    "areaname": "מרכז הנגב",
+    "migun_time": 60
+  },
+  {
+    "label": "כרמל",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "לב החולה",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "לבון",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "לביא",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "לבנים",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "להב",
+    "areaid": 25,
+    "areaname": "מרכז הנגב",
+    "migun_time": 45
+  },
+  {
+    "label": "להבות הבשן",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "להבות חביבה",
+    "areaid": 13,
+    "areaname": "ואדי ערה",
+    "migun_time": 90
+  },
+  {
+    "label": "להבים",
+    "areaid": 25,
+    "areaname": "מרכז הנגב",
+    "migun_time": 45
+  },
+  {
+    "label": "לוד",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "לוזית",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 60
+  },
+  {
+    "label": "לוחמי הגטאות",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "לוטם וחמדון",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "לוטן",
+    "areaid": 29,
+    "areaname": "ערבה",
+    "migun_time": 90
+  },
+  {
+    "label": "לטרון",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "לימן",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "לכיש",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "לפיד",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "לפידות",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 30
+  },
+  {
+    "label": "לקיה",
+    "areaid": 25,
+    "areaname": "מרכז הנגב",
+    "migun_time": 60
+  },
+  {
+    "label": "מאור",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "מאיר שפיה",
+    "areaid": 11,
+    "areaname": "חוף הכרמל",
+    "migun_time": 90
+  },
+  {
+    "label": "מבוא ביתר",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "מבוא דותן",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "מבוא חורון",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "מבוא חמה",
+    "areaid": 2,
+    "areaname": "גולן",
+    "migun_time": 30
+  },
+  {
+    "label": "מבוא מודיעים",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "מבואות יריחו",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "מבועים",
+    "areaid": 16,
+    "areaname": "מערב הנגב",
+    "migun_time": 30
+  },
+  {
+    "label": "מבטחים, עמיעוז, ישע",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "מבקיעים",
+    "areaid": 19,
+    "areaname": "מערב לכיש",
+    "migun_time": 30
+  },
+  {
+    "label": "מבשרת ציון",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "מג'דל כרום",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "מג'דל שמס",
+    "areaid": 2,
+    "areaname": "גולן",
+    "migun_time": 15
+  },
+  {
+    "label": "מגדים",
+    "areaid": 11,
+    "areaname": "חוף הכרמל",
+    "migun_time": 90
+  },
+  {
+    "label": "מגדל",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "מגדל העמק",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "מגדל עוז",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "מגדל תפן",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 30
+  },
+  {
+    "label": "מגדלים",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "מגל",
+    "areaid": 13,
+    "areaname": "ואדי ערה",
+    "migun_time": 90
+  },
+  {
+    "label": "מגן",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "מגן שאול",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "מגרון",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "מגשימים",
+    "areaid": 21,
+    "areaname": "ירקון",
+    "migun_time": 90
+  },
+  {
+    "label": "מדרך עוז",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "מדרשת בן גוריון",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "מודיעין - ישפרו סנטר",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "מודיעין - ליגד סנטר",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "מודיעין מכבים רעות",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "מודיעין עילית",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "מולדת",
+    "areaid": 4,
+    "areaname": "בקעת בית שאן",
+    "migun_time": 90
+  },
+  {
+    "label": "מועאוויה",
+    "areaid": 13,
+    "areaname": "ואדי ערה",
+    "migun_time": 90
+  },
+  {
+    "label": "מוצא עילית",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "מוקיבלה",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "מורן",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "מורשת",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "מזור",
+    "areaid": 21,
+    "areaname": "ירקון",
+    "migun_time": 90
+  },
+  {
+    "label": "מזכרת בתיה",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "מזרע",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "מזרעה",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "מחולה",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "מחניים",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "מחסיה",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "מטווח ניר עם",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "מטולה",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "מטע",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "מי עמי",
+    "areaid": 13,
+    "areaname": "ואדי ערה",
+    "migun_time": 90
+  },
+  {
+    "label": "מייסר",
+    "areaid": 13,
+    "areaname": "ואדי ערה",
+    "migun_time": 90
+  },
+  {
+    "label": "מיני ישראל - נחשון",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "מיצד",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "מיצר",
+    "areaid": 2,
+    "areaname": "גולן",
+    "migun_time": 30
+  },
+  {
+    "label": "מירב",
+    "areaid": 4,
+    "areaname": "בקעת בית שאן",
+    "migun_time": 90
+  },
+  {
+    "label": "מירון",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 30
+  },
+  {
+    "label": "מישר",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 60
+  },
+  {
+    "label": "מיתר",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "מכון וינגייט",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "מכורה",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "מכינת אלישע",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "מכמורת",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "מכמנים - כמאנה מערבית",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "מלאכי השלום",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "מלון אחוזת ירדן (אזור התרעה ישן)",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 30
+  },
+  {
+    "label": "מלונות ים המלח מרכז",
+    "areaid": 18,
+    "areaname": "ים המלח",
+    "migun_time": 90
+  },
+  {
+    "label": "מלכיה",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "מנוחה",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "מנוף",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "מנות",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 30
+  },
+  {
+    "label": "מנחמיה",
+    "areaid": 4,
+    "areaname": "בקעת בית שאן",
+    "migun_time": 60
+  },
+  {
+    "label": "מנחת מחניים",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "מנרה",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "מנשית זבדה",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "מסד",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "מסדה",
+    "areaid": 35,
+    "areaname": "קצרין",
+    "migun_time": 45
+  },
+  {
+    "label": "מסוף אורנית",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "מסילות",
+    "areaid": 4,
+    "areaname": "בקעת בית שאן",
+    "migun_time": 90
+  },
+  {
+    "label": "מסילת ציון",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "מסלול",
+    "areaid": 16,
+    "areaname": "מערב הנגב",
+    "migun_time": 30
+  },
+  {
+    "label": "מסעדה",
+    "areaid": 2,
+    "areaname": "גולן",
+    "migun_time": 15
+  },
+  {
+    "label": "מע'אר",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "מעברות",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "מעגלים, גבעולים, מלילות",
+    "areaid": 16,
+    "areaname": "מערב הנגב",
+    "migun_time": 30
+  },
+  {
+    "label": "מעגן",
+    "areaid": 35,
+    "areaname": "קצרין",
+    "migun_time": 45
+  },
+  {
+    "label": "מעגן מיכאל",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "מעוז חיים",
+    "areaid": 4,
+    "areaname": "בקעת בית שאן",
+    "migun_time": 90
+  },
+  {
+    "label": "מעון",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "מעון צופיה",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 60
+  },
+  {
+    "label": "מעונה",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 30
+  },
+  {
+    "label": "מעיין ברוך",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "מעיין צבי",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "מעיליא",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "מעלה אדומים",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "מעלה אפרים",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "מעלה גלבוע",
+    "areaid": 4,
+    "areaname": "בקעת בית שאן",
+    "migun_time": 90
+  },
+  {
+    "label": "מעלה גמלא",
+    "areaid": 35,
+    "areaname": "קצרין",
+    "migun_time": 45
+  },
+  {
+    "label": "מעלה החמישה",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "מעלה חבר",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "מעלה לבונה",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "מעלה מכמש",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "מעלה עירון",
+    "areaid": 13,
+    "areaname": "ואדי ערה",
+    "migun_time": 90
+  },
+  {
+    "label": "מעלה עמוס",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "מעלה צביה",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "מעלה רחבעם",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "מעלות תרשיחא",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 30
+  },
+  {
+    "label": "מענית (אזור התרעה ישן)",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "מענית, גבעת חביבה",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "מעש",
+    "areaid": 21,
+    "areaname": "ירקון",
+    "migun_time": 90
+  },
+  {
+    "label": "מפלסים",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "מצדה",
+    "areaid": 18,
+    "areaname": "ים המלח",
+    "migun_time": 90
+  },
+  {
+    "label": "מצובה",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "מצוקי דרגות",
+    "areaid": 18,
+    "areaname": "ים המלח",
+    "migun_time": 90
+  },
+  {
+    "label": "מצליח",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "מצפה",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "מצפה אבי''ב",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "מצפה אילן",
+    "areaid": 13,
+    "areaname": "ואדי ערה",
+    "migun_time": 90
+  },
+  {
+    "label": "מצפה דני",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "מצפה זי\"ו",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "מצפה חגית",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "מצפה יאיר",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "מצפה יריחו",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "מצפה מדרג",
+    "areaid": 18,
+    "areaname": "ים המלח",
+    "migun_time": 90
+  },
+  {
+    "label": "מצפה נטופה",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "מצפה רמון",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "מצפה שלם",
+    "areaid": 18,
+    "areaname": "ים המלח",
+    "migun_time": 90
+  },
+  {
+    "label": "מצפור פצאל",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "מצר",
+    "areaid": 13,
+    "areaname": "ואדי ערה",
+    "migun_time": 90
+  },
+  {
+    "label": "מקווה ישראל",
+    "areaid": 8,
+    "areaname": "דן",
+    "migun_time": 90
+  },
+  {
+    "label": "מרגליות",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "מרום גולן",
+    "areaid": 2,
+    "areaname": "גולן",
+    "migun_time": 15
+  },
+  {
+    "label": "מרחב עם",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "מרחביה מושב",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "מרחביה קיבוץ",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "מרחצאות עין גדי",
+    "areaid": 18,
+    "areaname": "ים המלח",
+    "migun_time": 90
+  },
+  {
+    "label": "מרכז אזורי דרום השרון",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "מרכז אזורי מבואות חרמון",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "מרכז אזורי מגילות",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "מרכז אזורי מרום גליל",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 30
+  },
+  {
+    "label": "מרכז אזורי משגב",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "מרכז אזורי רמת כורזים",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "מרכז חבר",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "מרכז מיר''ב",
+    "areaid": 11,
+    "areaname": "חוף הכרמל",
+    "migun_time": 90
+  },
+  {
+    "label": "מרכז שפירא",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "מרעית",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "משאבי שדה",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "משגב דב",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 60
+  },
+  {
+    "label": "משגב עם",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "משהד",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "משואה",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "משואות יצחק",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "משכיות",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "משמר איילון",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "משמר דוד",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "משמר הירדן",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 30
+  },
+  {
+    "label": "משמר הנגב",
+    "areaid": 25,
+    "areaname": "מרכז הנגב",
+    "migun_time": 45
+  },
+  {
+    "label": "משמר העמק",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "משמר השבעה",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "משמר השרון",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "משמרות",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "משמרת",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "משען",
+    "areaid": 19,
+    "areaname": "מערב לכיש",
+    "migun_time": 30
+  },
+  {
+    "label": "מתחם בני דרום",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 60
+  },
+  {
+    "label": "מתחם גלילות",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "מתחם סקי גלבוע",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "מתחם פי גלילות",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "מתחם שביל התפוזים",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "מתן",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "מתת",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "מתתיהו",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "נאות גולן",
+    "areaid": 2,
+    "areaname": "גולן",
+    "migun_time": 30
+  },
+  {
+    "label": "נאות הכיכר",
+    "areaid": 18,
+    "areaname": "ים המלח",
+    "migun_time": 90
+  },
+  {
+    "label": "נאות מרדכי",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "נאות סמדר",
+    "areaid": 29,
+    "areaname": "ערבה",
+    "migun_time": 90
+  },
+  {
+    "label": "נאות קדומים",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "נאעורה",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "נבטים",
+    "areaid": 25,
+    "areaname": "מרכז הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "נבי שועייב",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "נגבה",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 30
+  },
+  {
+    "label": "נגוהות",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 60
+  },
+  {
+    "label": "נהורה",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 30
+  },
+  {
+    "label": "נהלל",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "נהריה",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 30
+  },
+  {
+    "label": "נוב",
+    "areaid": 2,
+    "areaname": "גולן",
+    "migun_time": 15
+  },
+  {
+    "label": "נוגה",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 30
+  },
+  {
+    "label": "נוה איתן",
+    "areaid": 4,
+    "areaname": "בקעת בית שאן",
+    "migun_time": 90
+  },
+  {
+    "label": "נווה",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 30
+  },
+  {
+    "label": "נווה אור",
+    "areaid": 4,
+    "areaname": "בקעת בית שאן",
+    "migun_time": 90
+  },
+  {
+    "label": "נווה אטי''ב",
+    "areaid": 2,
+    "areaname": "גולן",
+    "migun_time": 15
+  },
+  {
+    "label": "נווה אילן",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "נווה ארז",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "נווה דניאל",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "נווה זוהר",
+    "areaid": 18,
+    "areaname": "ים המלח",
+    "migun_time": 90
+  },
+  {
+    "label": "נווה זיו",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 30
+  },
+  {
+    "label": "נווה חריף",
+    "areaid": 29,
+    "areaname": "ערבה",
+    "migun_time": 90
+  },
+  {
+    "label": "נווה ים",
+    "areaid": 11,
+    "areaname": "חוף הכרמל",
+    "migun_time": 90
+  },
+  {
+    "label": "נווה ימין",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "נווה ירק",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "נווה מבטח",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 60
+  },
+  {
+    "label": "נווה מיכאל - רוגלית",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "נווה צוף",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "נווה שלום",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "נועם",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "נוף איילון (אזור התרעה ישן)",
+    "areaid": 21,
+    "areaname": "ירקון",
+    "migun_time": 90
+  },
+  {
+    "label": "נוף איילון, שעלבים",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "נוף הגליל",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "נופי נחמיה",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "נופי פרת",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "נופים",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "נופית",
+    "areaid": 36,
+    "areaname": "קריות",
+    "migun_time": 90
+  },
+  {
+    "label": "נופך",
+    "areaid": 21,
+    "areaname": "ירקון",
+    "migun_time": 90
+  },
+  {
+    "label": "נוקדים",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "נורדיה",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "נורית",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "נחושה",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 60
+  },
+  {
+    "label": "נחל עוז",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "נחלה",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "נחליאל",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "נחלים",
+    "areaid": 21,
+    "areaname": "ירקון",
+    "migun_time": 90
+  },
+  {
+    "label": "נחם",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "נחף",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "נחשולים (אזור התרעה ישן)",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 60
+  },
+  {
+    "label": "נחשון",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "נחשונים",
+    "areaid": 21,
+    "areaname": "ירקון",
+    "migun_time": 90
+  },
+  {
+    "label": "נטועה",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "נטור",
+    "areaid": 2,
+    "areaname": "גולן",
+    "migun_time": 30
+  },
+  {
+    "label": "נטע",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 60
+  },
+  {
+    "label": "נטעים",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "נטף",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "נילי",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "נין",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "ניצן",
+    "areaid": 19,
+    "areaname": "מערב לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "ניצנה",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 60
+  },
+  {
+    "label": "ניצני עוז",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "ניצנים",
+    "areaid": 19,
+    "areaname": "מערב לכיש",
+    "migun_time": 30
+  },
+  {
+    "label": "ניר אליהו",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "ניר בנים",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "ניר גלים",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 45
+  },
+  {
+    "label": "ניר דוד",
+    "areaid": 4,
+    "areaname": "בקעת בית שאן",
+    "migun_time": 90
+  },
+  {
+    "label": "ניר ח''ן",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 30
+  },
+  {
+    "label": "ניר יצחק",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "ניר ישראל",
+    "areaid": 19,
+    "areaname": "מערב לכיש",
+    "migun_time": 30
+  },
+  {
+    "label": "ניר משה",
+    "areaid": 16,
+    "areaname": "מערב הנגב",
+    "migun_time": 30
+  },
+  {
+    "label": "ניר עוז",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "ניר עם",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "ניר עציון (אזור התרעה ישן)",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 60
+  },
+  {
+    "label": "ניר עציון, ימין אורד",
+    "areaid": 11,
+    "areaname": "חוף הכרמל",
+    "migun_time": 90
+  },
+  {
+    "label": "ניר עקיבא",
+    "areaid": 16,
+    "areaname": "מערב הנגב",
+    "migun_time": 30
+  },
+  {
+    "label": "ניר צבי",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "נירים",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "נירית",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "נמל קיסריה",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "נמרוד",
+    "areaid": 2,
+    "areaname": "גולן",
+    "migun_time": 15
+  },
+  {
+    "label": "נס הרים",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "נס עמים",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "נס ציונה",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "נעורים",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "נעלה",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "נעמה",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "נען",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "נערן",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "נצר חזני",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "נצר סרני",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "נצרת",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "נריה",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "נשר",
+    "areaid": 34,
+    "areaname": "חיפה",
+    "migun_time": 90
+  },
+  {
+    "label": "נתיב הגדוד",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "נתיב הל''ה",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "נתיב העשרה",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "נתיב השיירה",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "נתיבות",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 30
+  },
+  {
+    "label": "נתניה - מזרח",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "נתניה - מערב",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "סאג'ור",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "סאסא",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "סביון",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "סגולה",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "סואעד חמירה",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 60
+  },
+  {
+    "label": "סולם",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "סוסיא",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "סוסיא הקדומה",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "סופה",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "סינמה סיטי גלילות (אזור התרעה ישן)",
+    "areaid": 8,
+    "areaname": "דן",
+    "migun_time": 90
+  },
+  {
+    "label": "סכנין",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "סלמה",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "סלעית",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "סמר",
+    "areaid": 29,
+    "areaname": "ערבה",
+    "migun_time": 90
+  },
+  {
+    "label": "סנדלה",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "סנסנה",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 60
+  },
+  {
+    "label": "סעד",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "סעווה",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "סער",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 30
+  },
+  {
+    "label": "ספיר",
+    "areaid": 29,
+    "areaname": "ערבה",
+    "migun_time": 90
+  },
+  {
+    "label": "ספסופה - כפר חושן",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 30
+  },
+  {
+    "label": "סתריה",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "ע'ג'ר",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "עבדון",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "עברון",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 30
+  },
+  {
+    "label": "עגור",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 60
+  },
+  {
+    "label": "עדי",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 60
+  },
+  {
+    "label": "עדי עד",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "עדנים",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "עוז וגאון",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "עוזה",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 30
+  },
+  {
+    "label": "עוזייר (אזור התרעה ישן)",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 60
+  },
+  {
+    "label": "עוזייר, רומאנה",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "עולש",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "עומר",
+    "areaid": 25,
+    "areaname": "מרכז הנגב",
+    "migun_time": 60
+  },
+  {
+    "label": "עופר",
+    "areaid": 11,
+    "areaname": "חוף הכרמל",
+    "migun_time": 90
+  },
+  {
+    "label": "עופרים",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "עוצם",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 30
+  },
+  {
+    "label": "עזוז",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "עזר",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "עזריאל",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "עזריה",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "עזריקם",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "עטרת",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "עידן",
+    "areaid": 29,
+    "areaname": "ערבה",
+    "migun_time": 90
+  },
+  {
+    "label": "עיינות",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "עילבון",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "עילוט",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "עין איילה",
+    "areaid": 11,
+    "areaname": "חוף הכרמל",
+    "migun_time": 90
+  },
+  {
+    "label": "עין אל אסד",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 30
+  },
+  {
+    "label": "עין אל סהלה",
+    "areaid": 13,
+    "areaname": "ואדי ערה",
+    "migun_time": 90
+  },
+  {
+    "label": "עין בוקק",
+    "areaid": 18,
+    "areaname": "ים המלח",
+    "migun_time": 90
+  },
+  {
+    "label": "עין גב",
+    "areaid": 35,
+    "areaname": "קצרין",
+    "migun_time": 45
+  },
+  {
+    "label": "עין גדי",
+    "areaid": 18,
+    "areaname": "ים המלח",
+    "migun_time": 90
+  },
+  {
+    "label": "עין דור",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "עין הבשור",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "עין הוד",
+    "areaid": 11,
+    "areaname": "חוף הכרמל",
+    "migun_time": 90
+  },
+  {
+    "label": "עין החורש",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "עין המפרץ",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 60
+  },
+  {
+    "label": "עין הנצי''ב",
+    "areaid": 4,
+    "areaname": "בקעת בית שאן",
+    "migun_time": 90
+  },
+  {
+    "label": "עין העמק",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "עין השופט",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "עין השלושה",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "עין ורד",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "עין זיוון",
+    "areaid": 2,
+    "areaname": "גולן",
+    "migun_time": 15
+  },
+  {
+    "label": "עין חוד",
+    "areaid": 11,
+    "areaname": "חוף הכרמל",
+    "migun_time": 90
+  },
+  {
+    "label": "עין חצבה",
+    "areaid": 29,
+    "areaname": "ערבה",
+    "migun_time": 90
+  },
+  {
+    "label": "עין חרוד (אזור התרעה ישן)",
+    "areaid": 34,
+    "areaname": "חיפה",
+    "migun_time": 60
+  },
+  {
+    "label": "עין חרוד, תל יוסף",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "עין יהב",
+    "areaid": 29,
+    "areaname": "ערבה",
+    "migun_time": 90
+  },
+  {
+    "label": "עין יעקב",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 30
+  },
+  {
+    "label": "עין כרמל",
+    "areaid": 11,
+    "areaname": "חוף הכרמל",
+    "migun_time": 90
+  },
+  {
+    "label": "עין מאהל",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "עין נקובא",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "עין עירון",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "עין צורים",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "עין קנייא",
+    "areaid": 2,
+    "areaname": "גולן",
+    "migun_time": 15
+  },
+  {
+    "label": "עין ראפה",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "עין שמר",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "עין שריד",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "עין תמר",
+    "areaid": 18,
+    "areaname": "ים המלח",
+    "migun_time": 90
+  },
+  {
+    "label": "עינבר (אזור התרעה ישן)",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 60
+  },
+  {
+    "label": "עינות קדם",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "עינת",
+    "areaid": 21,
+    "areaname": "ירקון",
+    "migun_time": 90
+  },
+  {
+    "label": "עכו",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "עכו - אזור תעשייה",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "עכו - רמות ים",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "עלומים",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "עלי",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "עלי זהב - לשם",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "עלמה",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "עלמון",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "עמוקה",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 30
+  },
+  {
+    "label": "עמיחי",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "עמינדב",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "עמיעד",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "עמיקם",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "עמיר",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "עמנואל",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "עמקה",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "ענב",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "עספיא",
+    "areaid": 24,
+    "areaname": "יערות הכרמל",
+    "migun_time": 90
+  },
+  {
+    "label": "עפולה",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "עפרה",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "עץ אפרים",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "עצמון - שגב",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "עראבה",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "ערב אל נעים",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "ערב אל עראמשה",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "ערד",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "ערוגות",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "ערערה",
+    "areaid": 13,
+    "areaname": "ואדי ערה",
+    "migun_time": 90
+  },
+  {
+    "label": "ערערה בנגב",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "עשהאל",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "עשרת",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 60
+  },
+  {
+    "label": "עתלית",
+    "areaid": 11,
+    "areaname": "חוף הכרמל",
+    "migun_time": 90
+  },
+  {
+    "label": "עתניאל",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "פארן",
+    "areaid": 29,
+    "areaname": "ערבה",
+    "migun_time": 90
+  },
+  {
+    "label": "פארק אריאל שרון",
+    "areaid": 8,
+    "areaname": "דן",
+    "migun_time": 90
+  },
+  {
+    "label": "פארק תעשיות מגדל עוז",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "פארק תעשיות פלמחים",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "פארק תעשייה ראם",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 60
+  },
+  {
+    "label": "פדואל",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "פדויים",
+    "areaid": 16,
+    "areaname": "מערב הנגב",
+    "migun_time": 45
+  },
+  {
+    "label": "פדיה",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "פוריה כפר עבודה",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "פוריה נווה עובד",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "פוריה עילית",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "פוריידיס",
+    "areaid": 11,
+    "areaname": "חוף הכרמל",
+    "migun_time": 90
+  },
+  {
+    "label": "פורת",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "פטיש",
+    "areaid": 16,
+    "areaname": "מערב הנגב",
+    "migun_time": 30
+  },
+  {
+    "label": "פלך",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "פלמחים",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "פני קדם",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "פנימיית עין כרם",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "פסגות",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "פסוטה",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "פעמי תש''ז",
+    "areaid": 16,
+    "areaname": "מערב הנגב",
+    "migun_time": 30
+  },
+  {
+    "label": "פצאל",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "פקיעין",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "פקיעין החדשה",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "פרדס חנה כרכור",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "פרדסיה",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "פרוד",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 30
+  },
+  {
+    "label": "פרי גן",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "פתח תקווה",
+    "areaid": 21,
+    "areaname": "ירקון",
+    "migun_time": 90
+  },
+  {
+    "label": "פתחיה",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "צאלים",
+    "areaid": 16,
+    "areaname": "מערב הנגב",
+    "migun_time": 30
+  },
+  {
+    "label": "צבעון",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "צובה",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "צוחר, אוהד",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "צומת אלמוג",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "צומת הגוש",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "צופים",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "צופית",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "צופר",
+    "areaid": 29,
+    "areaname": "ערבה",
+    "migun_time": 90
+  },
+  {
+    "label": "צוקים",
+    "areaid": 29,
+    "areaname": "ערבה",
+    "migun_time": 90
+  },
+  {
+    "label": "צור הדסה",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "צור יצחק",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "צור משה",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "צור נתן",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "צוריאל",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "צורית גילון",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "ציפורי",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "צלפון",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "צמח",
+    "areaid": 35,
+    "areaname": "קצרין",
+    "migun_time": 45
+  },
+  {
+    "label": "צפריה",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "צפרירים",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 60
+  },
+  {
+    "label": "צפת - נוף כנרת",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 30
+  },
+  {
+    "label": "צפת - עיר",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 30
+  },
+  {
+    "label": "צפת - עכברה",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 30
+  },
+  {
+    "label": "צרופה",
+    "areaid": 11,
+    "areaname": "חוף הכרמל",
+    "migun_time": 90
+  },
+  {
+    "label": "צרעה",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "קבוצת גבע",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "קבוצת יבנה",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 60
+  },
+  {
+    "label": "קדומים",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "קדימה צורן",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "קדיתא",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 30
+  },
+  {
+    "label": "קדם ערבה",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "קדמה",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "קדמת צבי",
+    "areaid": 35,
+    "areaname": "קצרין",
+    "migun_time": 45
+  },
+  {
+    "label": "קדר",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "קדר דרום",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "קדרון",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 60
+  },
+  {
+    "label": "קדרים",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 60
+  },
+  {
+    "label": "קדש ברנע",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 60
+  },
+  {
+    "label": "קוממיות",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "קורנית",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "קטורה",
+    "areaid": 29,
+    "areaname": "ערבה",
+    "migun_time": 90
+  },
+  {
+    "label": "קיבוץ דן",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "קיבוץ מגידו",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "קידה",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "קיסריה",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "קלחים",
+    "areaid": 16,
+    "areaname": "מערב הנגב",
+    "migun_time": 30
+  },
+  {
+    "label": "קליה",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "קלנסווה",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "קלע אלון",
+    "areaid": 35,
+    "areaname": "קצרין",
+    "migun_time": 15
+  },
+  {
+    "label": "קסר א-סר",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "קציר",
+    "areaid": 13,
+    "areaname": "ואדי ערה",
+    "migun_time": 90
+  },
+  {
+    "label": "קצרין",
+    "areaid": 35,
+    "areaname": "קצרין",
+    "migun_time": 45
+  },
+  {
+    "label": "קצרין - אזור תעשייה",
+    "areaid": 35,
+    "areaname": "קצרין",
+    "migun_time": 45
+  },
+  {
+    "label": "קריית אונו",
+    "areaid": 8,
+    "areaname": "דן",
+    "migun_time": 90
+  },
+  {
+    "label": "קריית אתא",
+    "areaid": 36,
+    "areaname": "קריות",
+    "migun_time": 90
+  },
+  {
+    "label": "קריית ביאליק",
+    "areaid": 36,
+    "areaname": "קריות",
+    "migun_time": 90
+  },
+  {
+    "label": "קריית גת, כרמי גת",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "קריית חינוך מרחבים",
+    "areaid": 16,
+    "areaname": "מערב הנגב",
+    "migun_time": 45
+  },
+  {
+    "label": "קריית טבעון - בית זייד",
+    "areaid": 36,
+    "areaname": "קריות",
+    "migun_time": 90
+  },
+  {
+    "label": "קריית ים",
+    "areaid": 36,
+    "areaname": "קריות",
+    "migun_time": 90
+  },
+  {
+    "label": "קריית יערים",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "קריית מוצקין",
+    "areaid": 36,
+    "areaname": "קריות",
+    "migun_time": 90
+  },
+  {
+    "label": "קריית מלאכי",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "קריית נטפים",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "קריית ענבים",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "קריית עקרון",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "קריית שמונה",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "קרית ארבע",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "קרני שומרון",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "קשת",
+    "areaid": 2,
+    "areaname": "גולן",
+    "migun_time": 30
+  },
+  {
+    "label": "ראמה",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "ראס אל-עין",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "ראס עלי",
+    "areaid": 36,
+    "areaname": "קריות",
+    "migun_time": 90
+  },
+  {
+    "label": "ראש הנקרה",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "ראש העין",
+    "areaid": 21,
+    "areaname": "ירקון",
+    "migun_time": 90
+  },
+  {
+    "label": "ראש פינה",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "ראש צורים",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "ראשון לציון - מזרח",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "ראשון לציון - מערב",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "רבבה",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "רבדים",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 60
+  },
+  {
+    "label": "רביבים",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "רביד",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "רגבה",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "רגבים",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "רהט",
+    "areaid": 25,
+    "areaname": "מרכז הנגב",
+    "migun_time": 45
+  },
+  {
+    "label": "רווחה",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "רוויה",
+    "areaid": 4,
+    "areaname": "בקעת בית שאן",
+    "migun_time": 90
+  },
+  {
+    "label": "רוחמה",
+    "areaid": 16,
+    "areaname": "מערב הנגב",
+    "migun_time": 30
+  },
+  {
+    "label": "רומאנה (אזור התרעה ישן)",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 60
+  },
+  {
+    "label": "רומת אל הייב",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "רועי",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "רותם",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "רחוב",
+    "areaid": 4,
+    "areaname": "בקעת בית שאן",
+    "migun_time": 90
+  },
+  {
+    "label": "רחובות",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "רחלים",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "רטורנו - גבעת שמש",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "ריחאנייה",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "ריחן",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "ריינה",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "רימונים",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "רינתיה",
+    "areaid": 21,
+    "areaname": "ירקון",
+    "migun_time": 90
+  },
+  {
+    "label": "רכסים",
+    "areaid": 36,
+    "areaname": "קריות",
+    "migun_time": 90
+  },
+  {
+    "label": "רם און",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "רמות",
+    "areaid": 35,
+    "areaname": "קצרין",
+    "migun_time": 45
+  },
+  {
+    "label": "רמות השבים",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "רמות מאיר",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "רמות מנשה",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "רמות נפתלי",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "רמלה",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "רמת גן - מזרח",
+    "areaid": 8,
+    "areaname": "דן",
+    "migun_time": 90
+  },
+  {
+    "label": "רמת גן - מערב",
+    "areaid": 8,
+    "areaname": "דן",
+    "migun_time": 90
+  },
+  {
+    "label": "רמת דוד",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "רמת הכובש",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "רמת השופט",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "רמת השרון",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "רמת טראמפ",
+    "areaid": 35,
+    "areaname": "קצרין",
+    "migun_time": 15
+  },
+  {
+    "label": "רמת יוחנן",
+    "areaid": 36,
+    "areaname": "קריות",
+    "migun_time": 90
+  },
+  {
+    "label": "רמת ישי",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "רמת מגרון",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "רמת מגשימים",
+    "areaid": 2,
+    "areaname": "גולן",
+    "migun_time": 15
+  },
+  {
+    "label": "רמת צבי",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "רמת רזיאל",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "רנן",
+    "areaid": 16,
+    "areaname": "מערב הנגב",
+    "migun_time": 30
+  },
+  {
+    "label": "רעים",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "רעננה",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "רקפת",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "רשפון",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "רשפים (אזור התרעה ישן)",
+    "areaid": 4,
+    "areaname": "בקעת בית שאן",
+    "migun_time": 60
+  },
+  {
+    "label": "רשפים, שלוחות, שלפים",
+    "areaid": 4,
+    "areaname": "בקעת בית שאן",
+    "migun_time": 90
+  },
+  {
+    "label": "רתמים",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "שאנטי במדבר",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "שאר ישוב",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "שבות רחל",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "שבי דרום",
+    "areaid": 16,
+    "areaname": "מערב הנגב",
+    "migun_time": 30
+  },
+  {
+    "label": "שבי ציון",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 45
+  },
+  {
+    "label": "שבי שומרון",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "שבלי (אזור התרעה ישן)",
+    "areaid": 34,
+    "areaname": "חיפה",
+    "migun_time": 60
+  },
+  {
+    "label": "שגב שלום",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "שדה אילן",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "שדה אליהו",
+    "areaid": 4,
+    "areaname": "בקעת בית שאן",
+    "migun_time": 90
+  },
+  {
+    "label": "שדה אליעזר",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 30
+  },
+  {
+    "label": "שדה אפרים",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "שדה בועז",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "שדה בוקר",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "שדה בר",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "שדה דוד",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 30
+  },
+  {
+    "label": "שדה ורבורג",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "שדה יואב",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 30
+  },
+  {
+    "label": "שדה יעקב",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "שדה יצחק",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "שדה משה",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "שדה נחום",
+    "areaid": 4,
+    "areaname": "בקעת בית שאן",
+    "migun_time": 90
+  },
+  {
+    "label": "שדה נחמיה",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "שדה ניצן",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "שדה עוזיהו",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "שדה צבי",
+    "areaid": 16,
+    "areaname": "מערב הנגב",
+    "migun_time": 30
+  },
+  {
+    "label": "שדות ים",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "שדות מיכה",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 60
+  },
+  {
+    "label": "שדי אברהם",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "שדי חמד",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "שדי תרומות",
+    "areaid": 4,
+    "areaname": "בקעת בית שאן",
+    "migun_time": 90
+  },
+  {
+    "label": "שדמה",
+    "areaid": 14,
+    "areaname": "דרום השפלה",
+    "migun_time": 60
+  },
+  {
+    "label": "שדמות דבורה",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 90
+  },
+  {
+    "label": "שדמות מחולה",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "שדרות, איבים",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "שואבה",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "שובל",
+    "areaid": 25,
+    "areaname": "מרכז הנגב",
+    "migun_time": 45
+  },
+  {
+    "label": "שוהם",
+    "areaid": 21,
+    "areaname": "ירקון",
+    "migun_time": 90
+  },
+  {
+    "label": "שומרה",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "שומריה",
+    "areaid": 25,
+    "areaname": "מרכז הנגב",
+    "migun_time": 60
+  },
+  {
+    "label": "שוקדה",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "שורש",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "שורשים",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "שושנת העמקים",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "שזור",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "שחר",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 30
+  },
+  {
+    "label": "שחרות",
+    "areaid": 29,
+    "areaname": "ערבה",
+    "migun_time": 90
+  },
+  {
+    "label": "שיבולים",
+    "areaid": 16,
+    "areaname": "מערב הנגב",
+    "migun_time": 30
+  },
+  {
+    "label": "שיבלי אום אלג'נם",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "שיטים",
+    "areaid": 29,
+    "areaname": "ערבה",
+    "migun_time": 90
+  },
+  {
+    "label": "שייח' דנון",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "שילה",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "שילת",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "שכניה",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "שלווה",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 30
+  },
+  {
+    "label": "שלוחות (אזור התרעה ישן)",
+    "areaid": 4,
+    "areaname": "בקעת בית שאן",
+    "migun_time": 60
+  },
+  {
+    "label": "שלומי",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "שלומית",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 30
+  },
+  {
+    "label": "שלומציון",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "שלפים (אזור התרעה ישן)",
+    "areaid": 4,
+    "areaname": "בקעת בית שאן",
+    "migun_time": 60
+  },
+  {
+    "label": "שמיר",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "שמעה",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "שמרת",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "שמשית",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "שני ליבנה",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "שניר",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "שעב",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "שעל",
+    "areaid": 35,
+    "areaname": "קצרין",
+    "migun_time": 15
+  },
+  {
+    "label": "שעלבים (אזור התרעה ישן)",
+    "areaid": 21,
+    "areaname": "ירקון",
+    "migun_time": 90
+  },
+  {
+    "label": "שער אפרים",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "שער הגולן",
+    "areaid": 35,
+    "areaname": "קצרין",
+    "migun_time": 45
+  },
+  {
+    "label": "שער העמקים",
+    "areaid": 36,
+    "areaname": "קריות",
+    "migun_time": 90
+  },
+  {
+    "label": "שער מנשה",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "שערי תקווה",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "שפיים",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "שפיר",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "שפר",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 30
+  },
+  {
+    "label": "שפרעם",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "שקד",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "שקף",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 60
+  },
+  {
+    "label": "שרונה",
+    "areaid": 7,
+    "areaname": "גליל תחתון",
+    "migun_time": 60
+  },
+  {
+    "label": "שריגים - לי-און",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 60
+  },
+  {
+    "label": "שריד",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "שרשרת",
+    "areaid": 16,
+    "areaname": "מערב הנגב",
+    "migun_time": 30
+  },
+  {
+    "label": "שתולה",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "שתולים",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "תארבין",
+    "areaid": 25,
+    "areaname": "מרכז הנגב",
+    "migun_time": 45
+  },
+  {
+    "label": "תאשור",
+    "areaid": 16,
+    "areaname": "מערב הנגב",
+    "migun_time": 30
+  },
+  {
+    "label": "תדהר",
+    "areaid": 16,
+    "areaname": "מערב הנגב",
+    "migun_time": 30
+  },
+  {
+    "label": "תובל",
+    "areaid": 6,
+    "areaname": "גליל עליון",
+    "migun_time": 45
+  },
+  {
+    "label": "תומר",
+    "areaid": 3,
+    "areaname": "בקעה",
+    "migun_time": 90
+  },
+  {
+    "label": "תחנת רכבת כפר ברוך",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "תחנת רכבת כפר יהושוע",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "תחנת רכבת קריית מלאכי - יואב",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 60
+  },
+  {
+    "label": "תחנת רכבת ראש העין",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "תימורים",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "תירוש",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 60
+  },
+  {
+    "label": "תל אביב - דרום העיר ויפו",
+    "areaid": 8,
+    "areaname": "דן",
+    "migun_time": 90
+  },
+  {
+    "label": "תל אביב - מזרח",
+    "areaid": 8,
+    "areaname": "דן",
+    "migun_time": 90
+  },
+  {
+    "label": "תל אביב - מרכז העיר",
+    "areaid": 8,
+    "areaname": "דן",
+    "migun_time": 90
+  },
+  {
+    "label": "תל אביב - עבר הירקון",
+    "areaid": 8,
+    "areaname": "דן",
+    "migun_time": 90
+  },
+  {
+    "label": "תל חי",
+    "areaid": 30,
+    "areaname": "קו העימות",
+    "migun_time": 15
+  },
+  {
+    "label": "תל יוסף (אזור התרעה ישן)",
+    "areaid": 34,
+    "areaname": "חיפה",
+    "migun_time": 60
+  },
+  {
+    "label": "תל יצחק",
+    "areaid": 27,
+    "areaname": "שרון",
+    "migun_time": 90
+  },
+  {
+    "label": "תל מונד",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "תל עדשים",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "תל ערד",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "תל ציון",
+    "areaid": 10,
+    "areaname": "שומרון",
+    "migun_time": 90
+  },
+  {
+    "label": "תל קציר",
+    "areaid": 35,
+    "areaname": "קצרין",
+    "migun_time": 45
+  },
+  {
+    "label": "תל שבע",
+    "areaid": 9,
+    "areaname": "דרום הנגב",
+    "migun_time": 90
+  },
+  {
+    "label": "תל תאומים",
+    "areaid": 4,
+    "areaname": "בקעת בית שאן",
+    "migun_time": 90
+  },
+  {
+    "label": "תלם",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "תלמי אליהו",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "תלמי אלעזר",
+    "areaid": 15,
+    "areaname": "מנשה",
+    "migun_time": 90
+  },
+  {
+    "label": "תלמי ביל''ו",
+    "areaid": 16,
+    "areaname": "מערב הנגב",
+    "migun_time": 30
+  },
+  {
+    "label": "תלמי יוסף",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "תלמי יחיאל",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 45
+  },
+  {
+    "label": "תלמי יפה",
+    "areaid": 19,
+    "areaname": "מערב לכיש",
+    "migun_time": 30
+  },
+  {
+    "label": "תלמים",
+    "areaid": 22,
+    "areaname": "לכיש",
+    "migun_time": 30
+  },
+  {
+    "label": "תמרת",
+    "areaid": 37,
+    "areaname": "תבור",
+    "migun_time": 90
+  },
+  {
+    "label": "תנובות",
+    "areaid": 23,
+    "areaname": "חפר",
+    "migun_time": 90
+  },
+  {
+    "label": "תעוז",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  },
+  {
+    "label": "תעשיון צריפין",
+    "areaid": 12,
+    "areaname": "השפלה",
+    "migun_time": 90
+  },
+  {
+    "label": "תפרח",
+    "areaid": 16,
+    "areaname": "מערב הנגב",
+    "migun_time": 45
+  },
+  {
+    "label": "תקומה",
+    "areaid": 26,
+    "areaname": "עוטף עזה",
+    "migun_time": 15
+  },
+  {
+    "label": "תקוע",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "תקוע ד' וה'",
+    "areaid": 17,
+    "areaname": "יהודה",
+    "migun_time": 90
+  },
+  {
+    "label": "תרום",
+    "areaid": 5,
+    "areaname": "בית שמש",
+    "migun_time": 90
+  }
+]

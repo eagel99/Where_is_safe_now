@@ -3,10 +3,15 @@
 *.slnx
 *.sln
 
-# Local Netlify folder
-.netlify/
 node_modules/
 .env
+addon/
+
+# Runtime state: event log, snapshot and segment cache
+.data/
+
+# Live action rules may contain webhook URLs and topics; the example is tracked
+config/actions.json
 
 # Large binary artifacts
 *.tar

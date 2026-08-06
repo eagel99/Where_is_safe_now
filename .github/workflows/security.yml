@@ -19,9 +19,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "22"
+          cache: npm
 
-      - name: Run security tests
-        run: node --test --test-force-exit --experimental-test-isolation=none security.test.mjs
+      - name: Install dependencies
+        run: npm ci
+
+      # Syntax check plus the unit, correlation, ranking and security suites.
+      - name: Run tests
+        run: npm run verify
 
       # Requires package-lock.json — without it npm exits ENOLOCK and audits nothing.
       # No `|| true`: a high/critical advisory must fail the job, not go green.
